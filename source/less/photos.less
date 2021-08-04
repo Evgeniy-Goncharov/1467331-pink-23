@@ -1,0 +1,141 @@
+.photos {
+  background-color: @basic-white;
+  outline: 3px solid pink;
+  outline-offset: -6px;
+  padding-top: 54px;
+}
+
+.section-heading {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.photos-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photos-figure {
+  background-color: @basic-grey;
+}
+
+.author-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: @basic-blue;
+}
+
+.description {
+  line-height: 24px;
+}
+
+.likes {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: @basic-red;
+}
+
+.like-button {
+  width: 13px;
+  height: 12px;
+  border: none;
+  background: transparent url("../img/logos/like.svg") no-repeat center;
+}
+
+.photos__section-heading {
+  margin-bottom: 60px;
+}
+
+.photos__figure {
+  margin: 0;
+  padding: 0;
+
+  p {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+
+.photos__figure:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.photos__figure--panorama {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.photos__image {
+  display: block;
+}
+
+.panorama-description-wrapper {
+  background: @basic-grey;
+}
+
+.editor {
+  background-color: @basic-grey;
+  outline: 3px solid pink;
+  outline-offset: -6px;
+}
+
+.editor-controls {
+  border: none;
+}
+
+.editor-button {
+  display: block;
+  width: 100%;
+  height: 55px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: transparent;
+  border: 3px solid @basic-blue;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  font-style: normal;
+  color: @basic-blue;
+  opacity: 0.1;
+}
+
+.editor-button--active {
+  opacity: 1;
+  border-color: @basic-red;
+  color: @basic-red;
+}
+
+.editor__heading-wrapper {
+  background-color: @basic-white;
+  padding-top: 49px;
+  padding-bottom: 52px;
+
+}
+
+.editor__image {
+  display: block;
+  margin-top: 20px;
+}
+
+.editor-form {
+  padding-top: 42px;
+  padding-bottom: 41px;
+}
