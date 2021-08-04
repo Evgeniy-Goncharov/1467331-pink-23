@@ -4,6 +4,9 @@
   line-height: 30px;
   font-weight: normal;
   font-style: normal;
+  padding-top: 54px;
+  outline: 3px solid pink;
+  outline-offset: -6px;
 }
 
 .competition-heading {
@@ -15,8 +18,19 @@
   border: none;
 }
 
-.form__fieldset--grey {
+.form__fieldset-wrapper {
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form__fieldset-wrapper:last-child {
+  padding-bottom: 26px;
+}
+
+.form__fieldset-wrapper--grey {
   background-color: @basic-grey;
+  padding-top: 42px;
+  padding-bottom: 44px;
 }
 
 .form-fieldset label {
@@ -63,6 +77,11 @@
 }
 
 .submit-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -72,8 +91,24 @@
   background-color: @basic-green;
   border: none;
   border-radius: 1px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .red {
   color: @basic-red;
+}
+
+.competition__heading {
+  margin-bottom: 13px;
+}
+
+.form__fieldset {
+  padding: 0;
+
+}
+
+.form__note {
+  margin: 0;
+  padding: 0;
 }

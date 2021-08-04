@@ -1,9 +1,22 @@
 .tariffs {
   background-color: @basic-grey;
+  padding-top: 83px;
+  padding-bottom: 50px;
+  outline: 3px solid lightblue;
+  outline-offset: -3px;
 }
 
 .tariff {
   display: none;
+}
+
+.tariffs__tariff-caption-wrapper {
+  background-color: @basic-blue;
+}
+
+.tariffs__tariff-option-wrapper {
+  background-color: @basic-white;
+  border-bottom: 2px solid @basic-dark-grey;
 }
 
 .tariff--current {
@@ -11,7 +24,6 @@
 }
 
 .tariff-caption {
-  background-color: @basic-blue;
   color: @basic-white;
   text-transform: uppercase;
 
@@ -23,5 +35,5 @@
 }
 
 .tariff-option {
-  background-color:@basic-white;
+  text-transform: uppercase;
 }

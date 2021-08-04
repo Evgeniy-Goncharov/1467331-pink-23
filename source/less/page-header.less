@@ -1,5 +1,13 @@
 .page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   color: @basic-white;
+  padding: 22px 0 21px 0;
+  background-color: @special-black;
+  outline: 3px solid greenyellow;
+  outline-offset: -3px;
 }
 
 .main-nav {
@@ -10,10 +18,15 @@
 }
 
 .main-nav-list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: @basic-blue;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .main-nav-item {
@@ -25,9 +38,9 @@
 }
 
 .main-nav-item:not(:last-child) {
-  box-shadow: inset 0px -1px 0px @basic-black, inset 0px 1px 0px @special-white-shadow;
+  box-shadow: inset 0 -1px 0 @basic-black, inset 0 1px 0 @special-white-shadow;
 }
 
 .main-nav-item:last-child {
-  box-shadow: 0px -1px 0px @basic-black, inset 0px 1px 0px @special-white-shadow;
+  box-shadow: 0 -1px 0 @basic-black, inset 0 1px 0 @special-white-shadow;
 }
