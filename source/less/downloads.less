@@ -8,12 +8,22 @@
     line-height: 24px;
     font-weight: 300;
     color: @basic-white;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  @media (min-width: 660px) {
+    background: transparent url("../img/bg/header-phone-bg.png") no-repeat bottom right;
   }
 }
 
 .downloads__wrapper {
   padding-top: 28px;
   padding-bottom: 38px;
+
+  @media (min-width: 660px) {
+    padding-bottom: 119px;
+  }
 }
 
 .download-button {
@@ -24,10 +34,19 @@
   background-color: @basic-dark-blue;
   border: 3px solid @basic-white;
   border-radius: 29px;
+  max-width: 300px;
+}
+
+.download__button {
+  margin-bottom: 46px;
 }
 
 .downloads-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
