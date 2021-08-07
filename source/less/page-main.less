@@ -1,17 +1,12 @@
 .page-main {
+  background: url("../img/bg/header-bg.png") no-repeat center top;
+  background-size: contain;
   outline: 3px solid greenyellow;
   outline-offset: -3px;
-}
 
-.slogan-wrapper {
-  background: url("../img/bg/header-phone-bg.png") no-repeat bottom left,
-              url("../img/bg/header-bg.png") no-repeat center top;
-  background-size: auto, cover;
-}
-
-.page-main__slogan-wrapper {
-  padding-top: 95px;
-  padding-bottom: 320px;
+  @media (min-width: 660px) {
+    padding-top: 212px;
+  }
 }
 
 .page-slogan {
@@ -19,5 +14,20 @@
   line-height: 29px;
   font-weight: 300;
   color: @basic-white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-width: 300px;
+}
 
+.page-main__slogan {
+  padding-top: 95px;
+  padding-bottom: 320px;
+  background: url("../img/bg/header-phone-bg.png") no-repeat bottom left;
+
+  @media (min-width: 660px) {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+  }
 }

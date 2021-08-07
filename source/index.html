@@ -9,14 +9,14 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <div class="container">
+  <header class="page-header page-body__page-header">
+    <div class="container page-header__flex">
       <a class="page-header__logo logo">
         <img src="img/logos/logo-pink.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
           height="23">
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-    </div>
+      <button class="nav-toggle" type="button">Открыть меню</button>
+
 
     <nav class="main-nav">
       <ul class="main-nav-list main-nav__list">
@@ -26,14 +26,14 @@
         <li class="main-nav-item main-nav__item"><a href="#">HTML Academy</a></li>
       </ul>
     </nav>
-
+  </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Pink - фотоприложение для раскрашивания серых будней!</h1>
 
-    <div class="slogan-wrapper page-main__slogan-wrapper">
-      <p class="page-slogan container">Взгляните на жизнь иначе!</p>
+    <div class="container page-main__slogan">
+      <p class="page-slogan ">Взгляните на жизнь иначе!</p>
     </div>
 
     <section class="downloads downloads__wrapper">
@@ -65,35 +65,37 @@
       <p class="advantages-intro advantages__intro container">Устали от серости мегаполиса?</p>
       <p class="advantages-intro advantages__intro container">Нам есть, что вам предложить!</p>
       <div class="advantages__wrapper">
-        <ul class="advantages-list advantages__list container">
-          <li class="advantages__item">
-            <h3 class="advantages-heading advantages__heading">Поднимает настроение</h3>
-            <p class="advantages-content advantages__content">Приложение позволит вам победить осеннюю хандру и
-              депрессию
-              буквально в
-              несколько кликов!</p>
-          </li>
+        <div class="container advantages-container">
+          <ul class="advantages-list advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages-heading advantages__heading">Поднимает настроение</h3>
+              <p class="advantages-content advantages__content">Приложение позволит вам победить осеннюю хандру и
+                депрессию
+                буквально в
+                несколько кликов!</p>
+            </li>
 
-          <li class="advantages__item">
-            <h3 class="advantages-heading advantages__heading">Меняет мир вокруг</h3>
-            <p class="advantages-content advantages__content">Сделайте снимок и украсьте его смайликом или текстовой
-              подписью, чтобы усилить
-              эффект</p>
-          </li>
+            <li class="advantages__item">
+              <h3 class="advantages-heading advantages__heading">Меняет мир вокруг</h3>
+              <p class="advantages-content advantages__content">Сделайте снимок и украсьте его смайликом или текстовой
+                подписью, чтобы усилить
+                эффект</p>
+            </li>
 
-          <li class="advantages__item">
-            <h3 class="advantages-heading advantages__heading">Заводит новых друзей</h3>
-            <p class="advantages-content advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с
-              друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
+            <li class="advantages__item">
+              <h3 class="advantages-heading advantages__heading">Заводит новых друзей</h3>
+              <p class="advantages-content advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с
+                друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="news--mobile-hidden">
+    <section class="news mobile-hidden container">
       <h2 class="visually-hidden">Новости о нашем приложении</h2>
-      <ul class="news__list">
+      <ul class="news-list news__list">
         <li class="news__item">
           <h3 class="news__heading">Эффект на 24 часа!</h3>
           <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект от
@@ -131,7 +133,7 @@
       </p>
     </section>
 
-    <section class="tariffs">
+    <section class="tariffs--mobile">
       <h2 class="visually-hidden">Приобретите приложение сейчас по выгодному тарифу!</h2>
 
       <div class="tariff tariff--current">
@@ -139,16 +141,16 @@
           <h3 class="tariff-caption tariff__caption container">База <span>1.99 USD</span></h3>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Розовый фильтр <span class="visually-hidden">Да</span> <img
-              src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff-option tariff__option--uppercased container">Розовый фильтр <span
+              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Смайлики <span class="visually-hidden">Нет</span><img
-              src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
+          <p class="tariff-option tariff__option--uppercased container">Смайлики <span
+              class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Комментарии <span class="visually-hidden">Нет</span><img
-              src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
+          <p class="tariff-option tariff__option--uppercased container">Комментарии <span
+              class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
         </div>
       </div>
 
@@ -157,16 +159,16 @@
           <h3 class="tariff-caption tariff__caption container">Стандарт <span>3.99 USD</span></h3>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Розовый фильтр <span class="visually-hidden">Да</span> <img
-              src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff-option tariff__option--uppercased container">Розовый фильтр <span
+              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Смайлики <span class="visually-hidden">Да</span> <img
-              src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff-option tariff__option--uppercased container">Смайлики <span class="visually-hidden">Да</span>
+            <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Комментарии <span class="visually-hidden">Нет</span><img
-              src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
+          <p class="tariff-option tariff__option--uppercased container">Комментарии <span
+              class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
         </div>
       </div>
 
@@ -175,32 +177,69 @@
           <h3 class="tariff-caption tariff__caption container">Анлим <span>9.99 USD</span></h3>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Розовый фильтр <span class="visually-hidden">Да</span> <img
-              src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff-option tariff__option--uppercased container">Розовый фильтр <span
+              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Смайлики <span class="visually-hidden">Да</span> <img
-              src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff-option tariff__option--uppercased container">Смайлики <span class="visually-hidden">Да</span>
+            <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
         </div>
         <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option container">Комментарии <span class="visually-hidden">Да</span> <img
-              src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+          <p class="tariff-option tariff__option--uppercased container">Комментарии <span
+              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
         </div>
       </div>
 
-        <p class="tariffs__toggles slider__toggles container">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+      <p class="tariffs__toggles slider__toggles container">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
 
+    </section>
+
+    <section class="tariffs mobile-hidden">
+      <h2 class="visually-hidden">Приобретите приложение сейчас по выгодному тарифу!</h2>
+
+      <table class="container">
+        <tr>
+          <td class="null-cell"></td>
+          <th class="tariff-caption">База<span>1,99 USD</span></th>
+          <th class="tariff-caption">Стандарт<span>3,99 USD</span></th>
+          <th class="tariff-caption">Анлим<span>9,99 USD</span></th>
+        </tr>
+
+        <tr>
+          <td class="tariff-option">Розовый фильтр</td>
+          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
+          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
+          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
+        </tr>
+
+        <tr>
+          <td class="tariff-option">Смайлики</td>
+          <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></td>
+          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
+          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
+        </tr>
+
+        <tr>
+          <td class="tariff-option">Комментарии</td>
+          <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></td>
+          <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></td>
+          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
+        </tr>
+      </table>
     </section>
 
     <section class="contacts container">
       <h2 class="contacts-heading contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
-      <p>Звоните: <a class="contacts-link" href="tel:88125556666"> +7 (812) 555-66-66</a></p>
-      <p>Пишите: <a class="contacts-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p>Приезжайте в гости: <span class="contacts-link">ул. Большая Конюшенная, 19/8</span></p>
+
+      <div class="contacts__flex">
+        <p>Звоните: <a class="contacts-link" href="tel:88125556666"> +7 (812) 555-66-66</a></p>
+        <p>Пишите: <a class="contacts-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Приезжайте в гости: <span class="contacts-link">ул. Большая Конюшенная, 19/8</span></p>
+      </div>
     </section>
 
     <section class="map">

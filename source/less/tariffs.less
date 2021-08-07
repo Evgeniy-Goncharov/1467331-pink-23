@@ -1,9 +1,17 @@
 .tariffs {
   background-color: @basic-grey;
+}
+
+.tariffs--mobile {
+  background-color: @basic-grey;
   padding-top: 83px;
   padding-bottom: 50px;
   outline: 3px solid lightblue;
   outline-offset: -3px;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
 }
 
 .tariff {
@@ -26,6 +34,7 @@
 .tariff-caption {
   color: @basic-white;
   text-transform: uppercase;
+  background-color: @basic-blue;
 
   span {
     font-size: 18px;
@@ -35,5 +44,18 @@
 }
 
 .tariff-option {
+  background-color: @basic-white;
+}
+
+.tariff__option--uppercased {
   text-transform: uppercase;
+}
+
+td {
+  background-color: @basic-white;
+  border: none;
+}
+
+.null-cell {
+  background-color: @basic-grey;
 }
