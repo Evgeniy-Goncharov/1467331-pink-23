@@ -17,6 +17,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 
   @media (min-width: 1200px) {
     flex-direction: row;
@@ -46,6 +47,10 @@
   .emotions {
     order: 4;
   }
+
+  .submit {
+    order: 5;
+  }
 }
 
 .form-fieldset {
@@ -55,14 +60,68 @@
 .form__fieldset-wrapper {
   padding-top: 42px;
   padding-bottom: 44px;
+  outline: 3px solid lightblue;
+  outline-offset: -9px;
 
-  &--grey {
+  &--mobile-grey {
     background-color: @basic-grey;
+
+    @media (min-width: 660px) {
+      background: transparent;
+    }
   }
 }
 
 .form__fieldset-wrapper:last-child {
   padding-bottom: 26px;
+}
+
+.user {
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.apps {
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.user-contacts {
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.user-contacts__fieldset {
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.achievements {
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.achievements-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.emotions {
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .form-fieldset label {
@@ -83,16 +142,16 @@
   }
 }
 
+.label--tablet-full-width {
+  @media (min-width: 660px) {
+    width: 100%;
+  }
+}
+
 .form-legend {
   line-height: 18px;
   text-transform: uppercase;
   color: @basic-red;
-}
-
-.achievements-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .form-span {
@@ -111,7 +170,12 @@
 }
 
 .form-textarea {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
   border: 2px solid @basic-dark-grey;
+  width: 100%;
 }
 
 .submit-button {
@@ -131,6 +195,10 @@
   border-radius: 1px;
   box-sizing: border-box;
   padding: 10px;
+
+  @media (min-width: 660px) {
+    max-width: 296px;
+  }
 }
 
 .red {
@@ -145,7 +213,26 @@
   padding: 0;
 }
 
+.form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: 660px) {
+    width: 620px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+  }
+}
+
 .form__note {
   margin: 0;
   padding: 0;
+  text-align: center;
+  text-transform: uppercase;
 }

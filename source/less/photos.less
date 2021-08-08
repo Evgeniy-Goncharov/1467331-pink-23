@@ -13,9 +13,15 @@
 }
 
 .photos-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .photos-figure {
@@ -62,6 +68,12 @@
   margin-bottom: 60px;
 }
 
+.photos__item {
+  @media (min-width: 660px) {
+    width: min-content;
+  }
+}
+
 .photos__figure {
   margin: 0;
   padding: 0;
@@ -84,6 +96,19 @@
 
 .photos__image {
   display: block;
+  margin: 0 auto;
+
+  &--panorama {
+    @media (min-width: 660px) {
+      width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+      height: 506px;
+    }
+  }
 }
 
 .panorama-description-wrapper {
@@ -96,8 +121,51 @@
   outline-offset: -6px;
 }
 
+.editor__flex-wrapper {
+  @media (min-width: 660px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 54px;
+  }
+}
+
+.editor-form {
+  padding-top: 42px;
+  padding-bottom: 41px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .editor-controls {
+  display: none;
   border: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    width: 50%;
+  }
+
+  &--mobile {
+    border: none;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
+  }
+}
+
+.editor-buttons {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .editor-button {
@@ -127,15 +195,13 @@
   background-color: @basic-white;
   padding-top: 49px;
   padding-bottom: 52px;
-
 }
 
 .editor__image {
   display: block;
   margin-top: 20px;
-}
 
-.editor-form {
-  padding-top: 42px;
-  padding-bottom: 41px;
+  @media (min-width: 660px) {
+    margin-right: 48px;
+  }
 }
