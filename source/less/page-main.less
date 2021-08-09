@@ -1,11 +1,21 @@
 .page-main {
-  background: url("../img/bg/header-bg.png") no-repeat center top;
   background-size: contain;
   outline: 3px solid greenyellow;
   outline-offset: -3px;
+}
+
+.page-main__bg-wrapper {
+  padding-top: 95px;
+  background: url("../img/bg/header-phone-bg.png") no-repeat center left, url("../img/bg/header-bg.png") no-repeat center;
+  background-size: auto, cover;
 
   @media (min-width: 660px) {
+    background-position: bottom right, center;
     padding-top: 212px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 224px;
   }
 }
 
@@ -14,20 +24,21 @@
   line-height: 29px;
   font-weight: 300;
   color: @basic-white;
-  margin: 0;
   padding: 0;
   text-align: center;
   max-width: 300px;
 }
 
-.page-main__slogan {
-  padding-top: 95px;
-  padding-bottom: 320px;
-  background: url("../img/bg/header-phone-bg.png") no-repeat bottom left;
+.page-main__page-slogan {
+  margin: 0 auto;
+  margin-bottom: 320px;
 
   @media (min-width: 660px) {
-    background: transparent;
-    padding: 0;
-    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 51px;
   }
 }
