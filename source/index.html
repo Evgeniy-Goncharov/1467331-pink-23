@@ -10,20 +10,19 @@
 
 <body class="page-body">
   <header class="page-header page-body__page-header">
-    <div class="container page-header__flex">
+    <div class="page-header__flex">
       <a class="page-header__logo logo">
         <img src="img/logos/logo-pink.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
           height="23">
       </a>
-      <button class="nav-toggle" type="button">Открыть меню</button>
-
+      <button class="nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
 
       <nav class="main-nav">
         <ul class="main-nav-list main-nav__list">
-          <li class="main-nav-item main-nav__item main-nav__item--current"><a>Главная</a></li>
-          <li class="main-nav-item main-nav__item"><a href="photos.html">Фотографии</a></li>
-          <li class="main-nav-item main-nav__item"><a href="competition.html">Конкурс</a></li>
-          <li class="main-nav-item main-nav__item"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item main-nav__item--current"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photos.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="competition.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -33,7 +32,9 @@
     <h1 class="visually-hidden">Pink - фотоприложение для раскрашивания серых будней!</h1>
 
     <div class="page-main__bg-wrapper">
-      <p class="page-slogan page-main__page-slogan container">Взгляните на жизнь иначе!</p>
+      <div class="container">
+        <p class="page-slogan page-main__page-slogan container">Взгляните на жизнь иначе!</p>
+      </div>
 
       <section class="downloads downloads__wrapper">
         <div class="container">
@@ -62,13 +63,13 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения Pink.</h2>
-      <p class="advantages-intro advantages__intro container">Устали от серости мегаполиса?</p>
-      <p class="advantages-intro advantages__intro container">Нам есть, что вам предложить!</p>
+      <p class="advantages__intro container">Устали от серости мегаполиса?</p>
+      <p class="advantages__intro container">Нам есть, что вам <br> предложить!</p>
       <div class="advantages__wrapper">
         <div class="container advantages-container">
-          <ul class="advantages-list advantages__list">
+          <ul class="advantages__list">
             <li class="advantages__item">
-              <h3 class="advantages-heading advantages__heading">Поднимает настроение</h3>
+              <h3 class="advantages__heading">Поднимает настроение</h3>
               <p class="advantages-content advantages__content">Приложение позволит вам победить осеннюю хандру и
                 депрессию
                 буквально в
@@ -93,25 +94,27 @@
       </div>
     </section>
 
-    <section class="news mobile-hidden container">
+    <section class="news mobile-hidden">
       <h2 class="visually-hidden">Новости о нашем приложении</h2>
-      <ul class="news-list news__list">
-        <li class="news__item">
-          <h3 class="news__heading">Эффект на 24 часа!</h3>
-          <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект от
-            использования приложения длится целые сутки!</p>
-          <a class="news__link" href="#">Узнать больше об исследовании</a>
-        </li>
-      </ul>
+      <div class="news__bg-wrapper container">
+        <ul class="news-list news__list">
+          <li class="news__item">
+            <h3 class="news__heading">Эффект <br> на 24 часа!</h3>
+            <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект от
+              использования приложения длится целые сутки!</p>
+            <a class="news__link" href="#">Узнать больше об исследовании</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="reviews container">
+    <section class="reviews">
       <h2 class="visually-hidden">Отзывы о приложении</h2>
 
-      <ul class="reviews-list reviews__list slider">
+      <ul class="reviews-list reviews__list slider container">
         <li class="reviews__item">
           <blockquote class="reviews__blockquote">
-            <cite class="author-name reviews__author-name">Николай Петров</cite>
+            <cite class="reviews__author-name reviews__author-name">Николай Петров</cite>
             <p class="reviews__author-info--mobile-hidden">25 лет, водитель трамвая</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -119,7 +122,7 @@
         </li>
       </ul>
 
-      <p class="slider-navigation--mobile-hidden">
+      <p class="slider-navigation--desctop-only">
         <button class="slider-navigation__button slider-navigation__button--back" type="button"><span
             class="visually-hidden">Предыдущий</span></button>
         <button class="slider-navigation__button slider-navigation__button--next" type="button"><span
@@ -127,115 +130,111 @@
       </p>
 
       <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle slider__toggle--current" type="button"><span
+            class="visually-hidden">1</span></button>
+        <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+        <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
       </p>
     </section>
 
     <section class="tariffs--mobile">
       <h2 class="visually-hidden">Приобретите приложение сейчас по выгодному тарифу!</h2>
 
+      <div class="tariff">
+        <div class="tariffs__caption-wrapper">
+          <h3 class="tariffs__caption container">База </h3>
+          <p>1.99 USD</p>
+        </div>
+        <p class="tariff__option tariff__option--uppercased">Розовый фильтр <span class="visually-hidden">Да</span> <img
+            src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+        <p class="tariff__option tariff__option--uppercased">Смайлики <span class="visually-hidden">Нет</span><img
+            src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
+        <p class="tariff__option tariff__option--uppercased">Комментарии <span class="visually-hidden">Нет</span><img
+            src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
+      </div>
+
       <div class="tariff tariff--current">
-        <div class="tariffs__tariff-caption-wrapper">
-          <h3 class="tariff-caption tariff__caption container">База <span>1.99 USD</span></h3>
+        <div class="tariffs__caption-wrapper tariffs__caption--hit">
+          <h3 class="tariffs__caption container">Стандарт</h3>
+          <p>3.99 USD</p>
         </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Розовый фильтр <span
-              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Смайлики <span
-              class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Комментарии <span
-              class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
-        </div>
+        <p class="tariff__option tariff__option--uppercased container">Розовый фильтр <span
+            class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+        <p class="tariff__option tariff__option--uppercased container">Смайлики <span class="visually-hidden">Да</span>
+          <img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+        </p>
+        <p class="tariff__option tariff__option--uppercased container">Комментарии <span
+            class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
       </div>
 
       <div class="tariff">
-        <div class="tariffs__tariff-caption-wrapper">
-          <h3 class="tariff-caption tariff__caption container">Стандарт <span>3.99 USD</span></h3>
+        <div class="tariffs__caption-wrapper">
+          <h3 class="tariffs__caption container">Анлим</h3>
+          <p>1.99 USD</p>
         </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Розовый фильтр <span
-              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Смайлики <span class="visually-hidden">Да</span>
-            <img src="img/logos/yes.svg" alt="Да" width="31" height="21">
-          </p>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Комментарии <span
-              class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></p>
-        </div>
-      </div>
-
-      <div class="tariff">
-        <div class="tariffs__tariff-caption-wrapper">
-          <h3 class="tariff-caption tariff__caption container">Анлим <span>9.99 USD</span></h3>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Розовый фильтр <span
-              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Смайлики <span class="visually-hidden">Да</span>
-            <img src="img/logos/yes.svg" alt="Да" width="31" height="21">
-          </p>
-        </div>
-        <div class="tariffs__tariff-option-wrapper">
-          <p class="tariff-option tariff__option--uppercased container">Комментарии <span
-              class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
-        </div>
+        <p class="tariff__option tariff__option--uppercased container">Розовый фильтр <span
+            class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
+        <p class="tariff__option tariff__option--uppercased container">Смайлики <span class="visually-hidden">Да</span>
+          <img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+        </p>
+        <p class="tariff__option tariff__option--uppercased container">Комментарии <span
+            class="visually-hidden">Да</span> <img src="img/logos/yes.svg" alt="Да" width="31" height="21"></p>
       </div>
 
       <p class="tariffs__toggles slider__toggles container">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle slider__toggle--current" type="button"><span
+            class="visually-hidden">1</span></button>
+        <button class="slider__toggle" type="button"><span class="visually-hidden">2</button>
+        <button class="slider__toggle" type="button"><span class="visually-hidden">3</button>
       </p>
-
     </section>
 
     <section class="tariffs mobile-hidden">
       <h2 class="visually-hidden">Приобретите приложение сейчас по выгодному тарифу!</h2>
+      <div class="container">
+        <table class="tariffs--table">
+          <tr>
+            <td class="null-cell"></td>
+            <th class="tariffs__caption--cell">База<span>1,99 USD</span></th>
+            <th class="tariffs__caption--cell tariffs__caption--hit">Стандарт<span>3,99 USD</span></th>
+            <th class="tariffs__caption--cell">Анлим<span>9,99 USD</span></th>
+          </tr>
 
-      <table class="container">
-        <tr>
-          <td class="null-cell"></td>
-          <th class="tariff-caption">База<span>1,99 USD</span></th>
-          <th class="tariff-caption">Стандарт<span>3,99 USD</span></th>
-          <th class="tariff-caption">Анлим<span>9,99 USD</span></th>
-        </tr>
+          <tr>
+            <td class="tariff__option--cell">Розовый фильтр</td>
+            <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+            </td>
+            <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+            </td>
+            <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+            </td>
+          </tr>
 
-        <tr>
-          <td class="tariff-option">Розовый фильтр</td>
-          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
-          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
-          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
-        </tr>
+          <tr>
+            <td class="tariff__option--cell">Смайлики</td>
+            <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27">
+            </td>
+            <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+            </td>
+            <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+            </td>
+          </tr>
 
-        <tr>
-          <td class="tariff-option">Смайлики</td>
-          <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></td>
-          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
-          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
-        </tr>
-
-        <tr>
-          <td class="tariff-option">Комментарии</td>
-          <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></td>
-          <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27"></td>
-          <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21"></td>
-        </tr>
-      </table>
+          <tr>
+            <td class="tariff__option--cell">Комментарии</td>
+            <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27">
+            </td>
+            <td><span class="visually-hidden">Нет</span><img src="img/logos/no.svg" alt="Нет" width="27" height="27">
+            </td>
+            <td><span class="visually-hidden">Да</span><img src="img/logos/yes.svg" alt="Да" width="31" height="21">
+            </td>
+          </tr>
+        </table>
+      </div>
     </section>
 
     <section class="contacts container">
-      <h2 class="contacts-heading contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
+      <h2 class="contacts-heading contacts__heading">Остались вопросы? <br> Свяжитесь с нами!</h2>
 
       <div class="contacts__flex">
         <p>Звоните: <a class="contacts-link" href="tel:88125556666"> +7 (812) 555-66-66</a></p>
@@ -251,7 +250,7 @@
     </section>
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer">
     <a class="page-footer__logo logo">
       <img src="img/logos/footer-logo.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="145"
         height="40">
@@ -259,12 +258,12 @@
 
     <section class="social">
       <h2 class="visually-hidden">Давайте дружить!</h2>
-      <a class="social-link social__link" href="#"><span class="visually-hidden">Мы в Твиттер</span><img
-          src="img/logos/twitter.svg" alt="Наш Twitter" width="18" height="14"></a>
-      <a class="social-link social__link" href="#"><span class="visually-hidden">Мы в Фейсбук</span><img
+      <a class="social__link" href="#"><span class="visually-hidden">Мы в Твиттер</span><img src="img/logos/twitter.svg"
+          alt="Наш Twitter" width="18" height="14"></a>
+      <a class="social__link" href="#"><span class="visually-hidden">Мы в Фейсбук</span><img
           src="img/logos/facebook.svg" alt="Наш Facebook" width="9" height="18"></a>
-      <a class="social-link social__link" href="#"><span class="visually-hidden">Мы в Ютуб</span><img
-          src="img/logos/youtube.svg" alt="Наш YouTube" width="15" height="13"></a>
+      <a class="social__link" href="#"><span class="visually-hidden">Мы в Ютуб</span><img src="img/logos/youtube.svg"
+          alt="Наш YouTube" width="15" height="13"></a>
     </section>
 
     <p class="developed">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><img
