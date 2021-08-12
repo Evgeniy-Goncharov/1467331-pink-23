@@ -1,50 +1,121 @@
 .tariffs {
   background-color: @basic-grey;
+  padding-bottom: 70px;
+
+  @media (min-width: 1200px) {
+    padding-bottom: 98px;
+  }
 }
 
 .tariffs--mobile {
   background-color: @basic-grey;
-  padding-top: 83px;
   padding-bottom: 50px;
-  outline: 3px solid lightblue;
-  outline-offset: -3px;
 
   @media (min-width: 660px) {
     display: none;
   }
 }
 
+.tariffs--table {
+  width: 100%;
+
+  td {
+    width: 25%;
+    text-align: center;
+    vertical-align: center;
+    padding: 12px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
 .tariff {
   display: none;
+  margin-bottom: 45px;
 }
 
-.tariffs__tariff-caption-wrapper {
+.tariffs__caption-wrapper {
   background-color: @basic-blue;
-}
+  padding-top: 10px;
+  padding-bottom: 25px;
+  color: @basic-white;
+  text-align: center;
+  position: relative;
 
-.tariffs__tariff-option-wrapper {
-  background-color: @basic-white;
-  border-bottom: 2px solid @basic-dark-grey;
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .tariff--current {
   display: block;
 }
 
-.tariff-caption {
+.tariffs__caption {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
   color: @basic-white;
   text-transform: uppercase;
   background-color: @basic-blue;
+  padding: 0;
+  text-align: center;
 
-  span {
-    font-size: 18px;
+  &--hit {
+    position: relative;
+  }
+
+  &--hit::before {
+    content: "";
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    background: url("../img/logos/hit.svg") no-repeat center;
+    top: 0;
+    left: 20px;
+  }
+
+  &--cell {
+    padding: 20px;
+    background-color: @basic-blue;
+    color: @basic-white;
+    text-transform: uppercase;
+    font-size: 16px;
     line-height: 30px;
-    font-weight: 300;
+
+    span {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+    }
+  }
+
+  &--cell.tariffs__caption--hit::before {
+    width: 61px;
+    height: 61px;
+    left: 0;
+    background: url("../img/logos/hit-table.svg") no-repeat center;
   }
 }
 
-.tariff-option {
+.tariff__option {
+  margin: 0;
+  padding: 0 40px;
+  min-height: 60px;
   background-color: @basic-white;
+  border-bottom: 2px solid @basic-dark-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .tariff__option--uppercased {

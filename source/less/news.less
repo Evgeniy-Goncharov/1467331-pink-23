@@ -1,11 +1,13 @@
 .news {
-  padding-top: 102px;
-  padding-bottom: 109px;
-  background: transparent url("../img/logos/24-hours.svg") no-repeat left center;
-
   @media (min-width: 1200px) {
     background-color: @basic-grey;
   }
+}
+
+.news__bg-wrapper {
+  background: transparent url("../img/logos/24-hours.svg") no-repeat left center;
+  padding-top: 174px;
+  padding-bottom: 120px;
 }
 
 .news-list {
@@ -36,11 +38,26 @@
   font-weight: bold;
   font-style: normal;
   margin: 0;
+  padding: 0;
   margin-bottom: 24px;
+
+  @media (min-width: 1200px) {
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+
+  br {
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
 }
 
-.reviews__text {
-  order: -1;
+.news__text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-bottom: 47px;
 }
 
 .news__link {
