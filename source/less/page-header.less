@@ -2,60 +2,6 @@
   color: @basic-white;
   background: fade(@basic-black, 30%);
 
-  &--nav-opened {
-    background-color: @basic-blue;
-
-    .nav-toggle {
-      box-shadow: none;
-
-      &:hover::before {
-        box-shadow: none;
-      }
-
-      &:hover::after {
-        background-color: @basic-red;
-      }
-
-      &:active::before {
-        box-shadow: none;
-        background-color: @basic-red;
-      }
-
-      &:active::after {
-        background-color: @basic-red;
-        opacity: 0.3;
-      }
-    }
-
-    .nav-toggle::before,
-    .nav-toggle::after {
-      content: "";
-      width: 34px;
-      height: 3px;
-      position: absolute;
-      background-color: @basic-white;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto 0 auto auto;
-      box-shadow: none;
-    }
-
-    .nav-toggle::before {
-      transform: rotate(45deg);
-    }
-
-    .nav-toggle::after {
-      transform: rotate(-45deg);
-    }
-
-    .main-nav {
-      display: block;
-      border-top: 1px solid @basic-black;
-    }
-  }
-
   &--no-js {
     background-color: @basic-blue;
     box-shadow: inset 0 1px 0 @basic-black;
@@ -73,6 +19,60 @@
 
   @media (min-width: 1200px) {
     background: fade(@basic-black, 30%);
+  }
+}
+
+.page-header--nav-opened {
+  background-color: @basic-blue;
+
+  .nav-toggle {
+    box-shadow: none;
+
+    &:hover::before {
+      box-shadow: none;
+    }
+
+    &:hover::after {
+      background-color: @basic-red;
+    }
+
+    &:active::before {
+      box-shadow: none;
+      background-color: @basic-red;
+    }
+
+    &:active::after {
+      background-color: @basic-red;
+      opacity: 0.3;
+    }
+  }
+
+  .nav-toggle::before,
+  .nav-toggle::after {
+    content: "";
+    width: 34px;
+    height: 3px;
+    position: absolute;
+    background-color: @basic-white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0 auto auto;
+    box-shadow: none;
+  }
+
+  .nav-toggle::before {
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle::after {
+    transform: rotate(-45deg);
+  }
+
+  .main-nav {
+    display: block;
+    border-top: 1px solid @basic-black;
   }
 }
 
