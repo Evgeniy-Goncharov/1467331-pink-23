@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header page-body__page-header">
+  <header class="page-header page-body__page-header page-header--no-js">
     <div class="page-header__flex">
       <a class="page-header__logo logo">
         <img src="img/logos/logo-pink.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
@@ -28,6 +28,18 @@
     </div>
   </header>
 
+  <script>
+    var header = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.nav-toggle');
+
+    header.classList.remove('page-header--no-js');
+
+    navToggle.addEventListener('click', function () {
+      header.classList.toggle('page-header--nav-opened')
+    });
+
+  </script>
+
   <main class="page-main">
     <h1 class="visually-hidden">Pink - фотоприложение для раскрашивания серых будней!</h1>
 
@@ -43,16 +55,18 @@
 
           <ul class="downloads-list downloads__list">
             <li class="download__item">
-              <a class="download__link"><span class="visually-hidden">Apple</span><img class="download__image"
+              <a class="download__link" href="#"><span class="visually-hidden">Apple</span><img class="download__image"
                   src="img/logos/apple.svg" alt="Скачать для iPhone, iPad, OS X" width="47" height="56"></a>
             </li>
             <li class="download__item">
-              <a class="download__link"><span class="visually-hidden">Android</span><img class="download__image"
-                  src="img/logos/android.svg" alt="Скачать для Android" width="43" height="47"></a>
+              <a class="download__link" href="#"><span class="visually-hidden">Android</span><img
+                  class="download__image" src="img/logos/android.svg" alt="Скачать для Android" width="43"
+                  height="47"></a>
             </li>
             <li class="download__item">
-              <a class="download__link"><span class="visually-hidden">Windows</span><img class="download__image"
-                  src="img/logos/windows.svg" alt="Скачать для Windows Phone, Windows 8" width="44" height="41"></a>
+              <a class="download__link" href="#"><span class="visually-hidden">Windows</span><img
+                  class="download__image" src="img/logos/windows.svg" alt="Скачать для Windows Phone, Windows 8"
+                  width="44" height="41"></a>
             </li>
           </ul>
 
@@ -266,8 +280,14 @@
           alt="Наш YouTube" width="15" height="13"></a>
     </section>
 
-    <p class="developed">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><img
-          src="img/logos/htmlacademy.svg" alt="HTML Academy" width="27" height="34"></a></p>
+    <p class="developed"><a href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+            fill="#D22856" />
+        </svg>
+      </a></p>
   </footer>
 </body>
 

@@ -31,6 +31,15 @@
   max-width: 300px;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  &:hover {
+    background-color: @basic-white;
+    color: @basic-red;
+  }
+
+  &:active {
+    color: fade(@basic-red, 30%);
+  }
 }
 
 .downloads-list {

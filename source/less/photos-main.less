@@ -1,12 +1,30 @@
-.photos-main {
-  .page-slogan {
-    line-height: 33px;
-  }
-}
-
 .photos-main__bg-wrapper {
   background: @basic-blue url("../img/bg/header-bg.png") no-repeat top center;
   background-size: cover;
   padding-top: 102px;
   padding-bottom: 84px;
+
+  @media (min-width: 660px) {
+    padding-top: 191px;
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
+}
+
+.photos-main__page-slogan {
+  line-height: 33px;
+  width: min-content;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 660px) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

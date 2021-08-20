@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
 }
 
 .social__link {
@@ -15,5 +19,13 @@
 
   &:not(:last-child) {
     margin-right: 10px;
+  }
+
+  &:hover {
+    border-color: @basic-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
