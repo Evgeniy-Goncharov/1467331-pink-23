@@ -16,6 +16,7 @@
 }
 
 .page-footer__logo {
+  margin-left: 20px;
   margin-bottom: 40px;
 
   img {
@@ -25,6 +26,7 @@
 
   @media (min-width: 660px) {
     justify-self: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -33,10 +35,28 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
 
-  img {
-    margin-left: 15px;
+  a {
+    color: @basic-blue;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 14px;
+    }
+  }
+
+  a:hover {
+    path {
+      fill: @basic-blue;
+    }
+  }
+
+  a:active {
+    svg {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: 660px) {

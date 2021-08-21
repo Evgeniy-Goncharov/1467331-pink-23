@@ -132,15 +132,33 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: fade(@basic-blue, 30%);
+  background-color: @basic-blue;
+  opacity: 0.3;
   border: none;
 
   &:last-child {
     margin-right: 0;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   &--current {
     box-shadow: 0 0 0 3px @basic-black;
     background-color: @basic-white;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
