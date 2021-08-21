@@ -6,14 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="favicon.ico" rel="icon">
+  <link href="img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="img/favicons/180.png" rel="apple-touch-icon">
+  <link href="manifest.webmanifest" rel="manifest">
 </head>
 
 <body class="page-body">
   <header class="page-header page-body__page-header page-header--no-js">
     <div class="page-header__flex">
-      <a class="page-header__logo logo">
-        <img src="img/logos/logo-pink.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
-          height="23">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logos/logo--desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logos/logo--tablet.svg">
+          <img src="img/logos/logo--mobile.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
+            height="23">
+        </picture>
       </a>
       <button class="nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
 
@@ -45,13 +53,13 @@
 
     <div class="page-main__bg-wrapper">
       <div class="container">
-        <p class="page-slogan page-main__page-slogan container">Взгляните на жизнь иначе!</p>
+        <p class="page-slogan page-main__page-slogan">Взгляните на жизнь иначе!</p>
       </div>
 
       <section class="downloads downloads__wrapper">
         <div class="container">
           <h2 class="visually-hidden">Вы можете скачать наше приложение для любого устройства!</h2>
-          <button class="download-button download__button" type="button">Скачать приложение</button>
+          <button class="download__button" type="button">Скачать приложение</button>
 
           <ul class="downloads-list downloads__list">
             <li class="download__item">
