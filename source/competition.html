@@ -15,9 +15,13 @@
 <body class="page-body competition-body">
   <header class="page-header page-body__page-header page-header--no-js">
     <div class="page-header__flex">
-      <a class="page-header__logo logo">
-        <img src="img/logos/logo-pink.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
-          height="23">
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logos/logo--desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logos/logo--tablet.svg">
+          <img src="img/logos/logo--mobile.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
+            height="23">
+        </picture>
       </a>
       <button class="nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
 
@@ -194,7 +198,7 @@
               <li class="apps__item">
                 <label>
                   <input class="visually-hidden" type="radio" name="app" checked>
-                  <span class="form-span form__span">
+                  <span>
                     <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#E5E5E5" stroke-width="2" />
                       <circle cx="20.5" cy="20.5" r="7.5" fill="#D22856" />

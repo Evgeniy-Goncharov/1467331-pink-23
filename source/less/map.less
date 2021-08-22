@@ -1,6 +1,37 @@
 .map {
   margin: 0;
   padding: 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 50%;
+    height: 35px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+
+    @media (min-width: 660px) {
+      height: 68px;
+    }
+
+    @media (min-width: 1200px) {
+      height: 103px;
+    }
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to bottom left, @basic-white 50%, transparent 50%);
+    border-right: 1px solid @basic-white;
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to bottom right, @basic-white 50%, transparent 50%);
+    border-left: 1px solid @basic-white;
+  }
 }
 
 .map-image {
@@ -11,6 +42,20 @@
   object-fit: cover;
 
   @media (min-width: 660px) {
+    height: 502px;
+  }
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: 660px) {
+    height: 374px;
+  }
+
+  @media (min-width: 1200px) {
     height: 502px;
   }
 }
