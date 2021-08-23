@@ -108,7 +108,8 @@
     margin-bottom: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     rect {
       stroke: @basic-blue;
     }
@@ -139,9 +140,19 @@
   margin: 0;
   box-sizing: border-box;
 
+  &:focus + span {
+    rect,
+    circle:first-child {
+      stroke: @basic-black;
+    }
+  }
+
   &[type="text"]:hover,
   &[type="number"]:hover,
-  &[type="email"]:hover {
+  &[type="email"]:hover,
+  &[type="text"]:focus,
+  &[type="number"]:focus,
+  &[type="email"]:focus {
     border-color: @basic-blue;
   }
 

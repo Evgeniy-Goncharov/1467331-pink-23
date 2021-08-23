@@ -1,17 +1,34 @@
 .photos-main__bg-wrapper {
-  background: @basic-blue url("../img/bg/header-bg.png") no-repeat top center;
-  background-size: cover;
-  padding-top: 102px;
-  padding-bottom: 84px;
+  background-color: @basic-blue;
+  background-image: url("../img/bg/header-bg--mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  padding-top: 94px;
+  padding-bottom: 77px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/header-bg--mobile@2x.jpg");
+  }
 
   @media (min-width: 660px) {
     padding-top: 191px;
     padding-bottom: 143px;
+    background-image: url("../img/bg/header-bg--tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/header-bg--tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     padding-top: 184px;
     padding-bottom: 104px;
+    background-image: url("../img/bg/header-bg--desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/header-bg--desktop@2x.jpg");
+    }
   }
 }
 
