@@ -56,6 +56,24 @@
   margin-bottom: 31px;
   text-align: center;
 
+  &:first-child {
+    @media (min-width: 660px) {
+      margin-right: 50px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media (min-width: 660px) {
+      margin-bottom: 0;
+    }
+  }
+
   @media (min-width: 660px) {
     max-width: 250px;
     display: flex;
@@ -69,22 +87,6 @@
 
     &:nth-child(2) {
       order: 3;
-    }
-  }
-
-  &:first-child {
-    @media (min-width: 660px) {
-      margin-right: 50px;
-    }
-
-    @media (min-width: 1200px) {
-      margin-right: 0;
-    }
-  }
-
-  &:last-child {
-    @media (min-width: 660px) {
-      margin-bottom: 0;
     }
   }
 }

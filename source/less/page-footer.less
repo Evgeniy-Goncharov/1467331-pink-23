@@ -16,12 +16,19 @@
 }
 
 .page-footer__logo {
-  margin-left: 20px;
   margin-bottom: 40px;
 
-  img {
-    width: 145px;
-    height: 40px;
+  &:hover {
+    svg {
+      fill: @basic-red;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: @basic-blue;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: 660px) {
@@ -45,10 +52,14 @@
     svg {
       margin-left: 14px;
     }
+
+    use {
+      fill: @basic-red;
+    }
   }
 
   a:hover {
-    path {
+    use {
       fill: @basic-blue;
     }
   }
@@ -56,6 +67,12 @@
   a:active {
     svg {
       opacity: 0.3;
+    }
+  }
+
+  a:visited {
+    svg {
+      fill: @basic-red;
     }
   }
 

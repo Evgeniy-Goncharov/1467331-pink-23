@@ -102,20 +102,30 @@
     text-transform: uppercase;
     color: @basic-red;
     padding-left: 23px;
+
+    use:first-child {
+      fill: @basic-white;
+      stroke: @basic-dark-grey;
+    }
+
+    use:last-child {
+      display: none;
+    }
   }
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &:hover {
-    rect {
+  &:hover,
+  &:focus {
+    use:first-child {
       stroke: @basic-blue;
     }
   }
 
   &:active {
-    rect {
+    use:first-child {
       stroke: @basic-red;
     }
   }
@@ -139,9 +149,18 @@
   margin: 0;
   box-sizing: border-box;
 
+  &:focus + span {
+    use:first-child {
+      stroke: @basic-blue;
+    }
+  }
+
   &[type="text"]:hover,
   &[type="number"]:hover,
-  &[type="email"]:hover {
+  &[type="email"]:hover,
+  &[type="text"]:focus,
+  &[type="number"]:focus,
+  &[type="email"]:focus {
     border-color: @basic-blue;
   }
 
@@ -162,15 +181,11 @@
     svg {
       margin-right: 20px;
     }
-
-    path {
-      display: none;
-    }
   }
 
   &[type="checkbox"]:checked + span {
-    path {
-      display: inline;
+    use:last-child {
+      display: block;
     }
   }
 
@@ -185,27 +200,11 @@
     svg {
       margin-right: 31px;
     }
-
-    circle:last-child {
-      display: none;
-    }
   }
 
   &[type="radio"]:checked + span {
-    circle:last-child {
+    use:last-child {
       display: inline;
-    }
-  }
-
-  &[type="radio"]:hover + span {
-    circle:first-child {
-      stroke: @basic-blue;
-    }
-  }
-
-  &[type="radio"]:active + span {
-    circle:first-child {
-      stroke: @basic-red;
     }
   }
 

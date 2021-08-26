@@ -103,6 +103,10 @@
     height: 300px;
   }
 
+  @media (min-width: 1200px) {
+    height: 400px;
+  }
+
   &--panorama {
     width: 100%;
     height: auto;
@@ -321,6 +325,10 @@
   label {
     cursor: pointer;
     margin-bottom: 34px;
+
+    .editor-controls__span {
+      opacity: 0.3;
+    }
   }
 
   label:not(:nth-last-child(2)) {
@@ -334,9 +342,13 @@
   }
 
   label:hover {
-    g {
+    .editor-controls__span {
       opacity: 0.5;
     }
+  }
+
+  label:hover input[type="radio"]:checked + .editor-controls__span {
+    opacity: 1;
   }
 
   @media (min-width: 660px) {
@@ -348,13 +360,7 @@
   display: block;
 
   svg {
-    g {
-      opacity: 0.3;
-    }
-
-    path {
-      fill: @basic-blue;
-    }
+    fill: @basic-blue;
   }
 
   @media (min-width: 660px) {
@@ -386,14 +392,10 @@
 }
 
 input:checked + .editor-controls__span {
-  svg {
-    g {
-      opacity: 1;
-    }
+  opacity: 1;
 
-    path {
-      fill: @basic-red;
-    }
+  svg {
+    fill: @basic-red;
   }
 }
 
