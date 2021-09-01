@@ -3,6 +3,7 @@
 }
 
 .page-main__bg-wrapper {
+
   padding-top: 89px;
   background-color: @basic-blue;
   background-image: url("../img/bg/header-phone-bg--mobile.png"), url("../img/bg/header-bg--mobile.jpg");
@@ -18,7 +19,12 @@
     background-image: url("../img/bg/header-phone-bg--tablet.png"), url("../img/bg/header-bg--tablet.jpg");
     background-position: bottom right, center;
     background-size: 660px auto, cover;
+
     padding-top: 204px;
+  }
+
+  @media (min-width: 660px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bg/header-phone-bg--tablet@2x.png"), url("../img/bg/header-bg--tablet@2x.jpg");
   }
 
   @media (min-width: 660px) and (min-resolution: 2dppx) {

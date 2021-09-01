@@ -129,6 +129,7 @@
 
   &:hover,
   &:focus {
+
     use:first-child {
       stroke: @basic-blue;
     }
@@ -168,6 +169,13 @@
   &:focus + span {
     use:first-child {
       stroke: @basic-blue;
+    }
+  }
+
+  &:focus + span {
+    rect,
+    circle:first-child {
+      stroke: @basic-black;
     }
   }
 
