@@ -3,13 +3,13 @@
   padding-bottom: 70px;
 
   @media (min-width: 1200px) {
-    padding-bottom: 98px;
+    padding-bottom: 94px;
   }
 }
 
 .tariffs--mobile {
   background-color: @basic-grey;
-  padding-bottom: 50px;
+  padding-bottom: 42px;
 
   @media (min-width: 660px) {
     display: none;
@@ -21,26 +21,32 @@
 
   td {
     width: 25%;
-    text-align: center;
-    vertical-align: center;
-    padding: 12px;
+    vertical-align: middle;
+    padding: 7px 15px;
 
     img {
       display: block;
       margin: 0 auto;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      padding-top: 12px;
+      padding-left: 20px;
+      padding-bottom: 17px;
     }
   }
 }
 
 .tariff {
   display: none;
-  margin-bottom: 45px;
+  margin-bottom: 26px;
 }
 
 .tariffs__caption-wrapper {
   background-color: @basic-blue;
-  padding-top: 10px;
-  padding-bottom: 25px;
+  padding-top: 11px;
+  padding-bottom: 27px;
   color: @basic-white;
   text-align: center;
   position: relative;
@@ -59,7 +65,7 @@
 }
 
 .tariffs__caption {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: bold;
   color: @basic-white;
@@ -83,7 +89,7 @@
   }
 
   &--cell {
-    padding: 20px;
+    padding: 12px;
     background-color: @basic-blue;
     color: @basic-white;
     text-transform: uppercase;
@@ -94,7 +100,19 @@
       display: block;
       margin: 0;
       padding: 0;
+      font-size: 18px;
+      line-height: 24px;
       font-weight: 300;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      padding: 16px;
+      padding-bottom: 28px;
+
+      span {
+        font-size: 24px;
+      }
     }
   }
 
@@ -109,7 +127,7 @@
 .tariff__option {
   margin: 0;
   padding: 0 40px;
-  min-height: 60px;
+  min-height: 59px;
   background-color: @basic-white;
   border-bottom: 2px solid @basic-dark-grey;
   display: flex;

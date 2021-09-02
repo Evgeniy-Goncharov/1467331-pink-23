@@ -1,6 +1,37 @@
 .modal {
   display: none;
   box-shadow: 0 7px 15px @special-dark-shadow;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: min-content;
+  background: @basic-white;
+  padding-top: 44px;
+  max-width: 460px;
+
+  .submit-button {
+    max-width: 276px;
+    margin: 0 auto;
+
+    @media (max-width: 660px) {
+      max-width: 296px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 780px;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-warning {
+  padding-bottom: 52px;
 }
 
 .modal-heading {
@@ -8,6 +39,21 @@
   line-height: 24px;
   font-weight: bold;
   font-style: normal;
+  text-align: center;
+  margin: 0 20px 25px 20px;
+  padding: 0;
+
+  @media (min-width: 660px) {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 400px;
+  }
 }
 
 .modal-description {
@@ -15,4 +61,24 @@
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
+  margin: 0 20px 40px 20px;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 400px;
+  }
+}
+
+.modal__footer {
+  background: @basic-grey;
+  margin: 0;
+  padding: 52px 20px 52px 20px;
 }

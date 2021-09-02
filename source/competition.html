@@ -16,21 +16,21 @@
   <header class="page-header page-body__page-header page-header--no-js">
     <div class="page-header__flex">
       <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logos/logo--desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logos/logo--tablet.svg">
-          <img src="img/logos/logo--mobile.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="74"
-            height="23">
-        </picture>
+        <svg width="74" height="23">
+          <use xlink:href="img/icons/sprite.svg#logo--mobile"></use>
+          <use xlink:href="img/icons/sprite.svg#logo--tablet"></use>
+          <use xlink:href="img/icons/sprite.svg#logo--desktop"></use>
+        </svg>
       </a>
+
       <button class="nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
 
       <nav class="main-nav">
         <ul class="main-nav-list main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="photos.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--current"><a href="">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item main-nav__item--current"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -64,22 +64,22 @@
       </h2>
 
       <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="user form__fieldset container">
-            <label>
-              <span>Фамилия:</span>
-              <input type="text" placeholder="Укажите фамилию *">
-            </label>
+        <fieldset class="user form__fieldset container">
+          <label>
+            <span>Фамилия:</span>
+            <input type="text" placeholder="Укажите фамилию *">
+          </label>
 
-            <label>
-              <span>Имя:</span>
-              <input type="text" placeholder="Введите ваше имя *">
-            </label>
+          <label>
+            <span>Имя:</span>
+            <input type="text" placeholder="Введите ваше имя *">
+          </label>
 
-            <label>
-              <span>Отчество:</span>
-              <input type="text" placeholder="Ну и отчество тоже">
-            </label>
-          </fieldset>
+          <label>
+            <span>Отчество:</span>
+            <input type="text" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
 
         <div class="achievements form__fieldset-wrapper--mobile-grey">
           <fieldset class="achievements__fieldset form__fieldset container">
@@ -89,11 +89,9 @@
                 <label>
                   <input class="visually-hidden" type="checkbox" checked>
                   <span>
-                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <path
-                        d="M30.7001 11.2843C30.5105 11.1021 30.2557 11 29.9903 11C29.7249 11 29.47 11.1021 29.2805 11.2843L15.7032 24.6028L10.7347 19.729C10.6405 19.6358 10.5283 19.5618 10.4047 19.5113C10.2812 19.4608 10.1486 19.4348 10.0148 19.4348C9.88093 19.4348 9.7484 19.4608 9.62483 19.5113C9.50127 19.5618 9.38912 19.6358 9.29486 19.729C9.106 19.9154 9 20.1675 9 20.4302C9 20.693 9.106 20.9451 9.29486 21.1315L14.9833 26.7115C15.0781 26.8037 15.1904 26.8767 15.314 26.9262C15.4375 26.9756 15.5698 27.0007 15.7032 27C15.9692 26.9989 16.2242 26.8953 16.413 26.7115L30.7001 12.6968C30.7951 12.6043 30.8705 12.4943 30.922 12.3731C30.9735 12.2519 31 12.1218 31 11.9905C31 11.8592 30.9735 11.7292 30.922 11.608C30.8705 11.4868 30.7951 11.3768 30.7001 11.2843Z"
-                        fill="#D22856" />
+                    <svg width="39" height="39">
+                      <use xlink:href="img/icons/sprite.svg#checkbox"></use>
+                      <use x="9" y="11" width="22" height="16" xlink:href="img/icons/sprite.svg#checkbox-on"></use>
                     </svg>
                     Сделал селфи с акулой
                   </span>
@@ -104,11 +102,9 @@
                 <label>
                   <input class="visually-hidden" type="checkbox" checked>
                   <span>
-                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <path
-                        d="M30.7001 11.2843C30.5105 11.1021 30.2557 11 29.9903 11C29.7249 11 29.47 11.1021 29.2805 11.2843L15.7032 24.6028L10.7347 19.729C10.6405 19.6358 10.5283 19.5618 10.4047 19.5113C10.2812 19.4608 10.1486 19.4348 10.0148 19.4348C9.88093 19.4348 9.7484 19.4608 9.62483 19.5113C9.50127 19.5618 9.38912 19.6358 9.29486 19.729C9.106 19.9154 9 20.1675 9 20.4302C9 20.693 9.106 20.9451 9.29486 21.1315L14.9833 26.7115C15.0781 26.8037 15.1904 26.8767 15.314 26.9262C15.4375 26.9756 15.5698 27.0007 15.7032 27C15.9692 26.9989 16.2242 26.8953 16.413 26.7115L30.7001 12.6968C30.7951 12.6043 30.8705 12.4943 30.922 12.3731C30.9735 12.2519 31 12.1218 31 11.9905C31 11.8592 30.9735 11.7292 30.922 11.608C30.8705 11.4868 30.7951 11.3768 30.7001 11.2843Z"
-                        fill="#D22856" />
+                    <svg width="39" height="39">
+                      <use xlink:href="img/icons/sprite.svg#checkbox"></use>
+                      <use x="9" y="11" width="22" height="16" xlink:href="img/icons/sprite.svg#checkbox-on"></use>
                     </svg>
                     Обгорел на пляже
                   </span>
@@ -119,11 +115,9 @@
                 <label>
                   <input class="visually-hidden" type="checkbox">
                   <span>
-                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <path
-                        d="M30.7001 11.2843C30.5105 11.1021 30.2557 11 29.9903 11C29.7249 11 29.47 11.1021 29.2805 11.2843L15.7032 24.6028L10.7347 19.729C10.6405 19.6358 10.5283 19.5618 10.4047 19.5113C10.2812 19.4608 10.1486 19.4348 10.0148 19.4348C9.88093 19.4348 9.7484 19.4608 9.62483 19.5113C9.50127 19.5618 9.38912 19.6358 9.29486 19.729C9.106 19.9154 9 20.1675 9 20.4302C9 20.693 9.106 20.9451 9.29486 21.1315L14.9833 26.7115C15.0781 26.8037 15.1904 26.8767 15.314 26.9262C15.4375 26.9756 15.5698 27.0007 15.7032 27C15.9692 26.9989 16.2242 26.8953 16.413 26.7115L30.7001 12.6968C30.7951 12.6043 30.8705 12.4943 30.922 12.3731C30.9735 12.2519 31 12.1218 31 11.9905C31 11.8592 30.9735 11.7292 30.922 11.608C30.8705 11.4868 30.7951 11.3768 30.7001 11.2843Z"
-                        fill="#D22856" />
+                    <svg width="39" height="39">
+                      <use xlink:href="img/icons/sprite.svg#checkbox"></use>
+                      <use x="9" y="11" width="22" height="16" xlink:href="img/icons/sprite.svg#checkbox-on"></use>
                     </svg>
                     Видел Чака Норриса
                   </span>
@@ -134,11 +128,9 @@
                 <label>
                   <input class="visually-hidden" type="checkbox">
                   <span>
-                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <path
-                        d="M30.7001 11.2843C30.5105 11.1021 30.2557 11 29.9903 11C29.7249 11 29.47 11.1021 29.2805 11.2843L15.7032 24.6028L10.7347 19.729C10.6405 19.6358 10.5283 19.5618 10.4047 19.5113C10.2812 19.4608 10.1486 19.4348 10.0148 19.4348C9.88093 19.4348 9.7484 19.4608 9.62483 19.5113C9.50127 19.5618 9.38912 19.6358 9.29486 19.729C9.106 19.9154 9 20.1675 9 20.4302C9 20.693 9.106 20.9451 9.29486 21.1315L14.9833 26.7115C15.0781 26.8037 15.1904 26.8767 15.314 26.9262C15.4375 26.9756 15.5698 27.0007 15.7032 27C15.9692 26.9989 16.2242 26.8953 16.413 26.7115L30.7001 12.6968C30.7951 12.6043 30.8705 12.4943 30.922 12.3731C30.9735 12.2519 31 12.1218 31 11.9905C31 11.8592 30.9735 11.7292 30.922 11.608C30.8705 11.4868 30.7951 11.3768 30.7001 11.2843Z"
-                        fill="#D22856" />
+                    <svg width="39" height="39">
+                      <use xlink:href="img/icons/sprite.svg#checkbox"></use>
+                      <use x="9" y="11" width="22" height="16" xlink:href="img/icons/sprite.svg#checkbox-on"></use>
                     </svg>
                     Накупил сувениров
                   </span>
@@ -149,11 +141,9 @@
                 <label>
                   <input class="visually-hidden" type="checkbox" checked>
                   <span>
-                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <path
-                        d="M30.7001 11.2843C30.5105 11.1021 30.2557 11 29.9903 11C29.7249 11 29.47 11.1021 29.2805 11.2843L15.7032 24.6028L10.7347 19.729C10.6405 19.6358 10.5283 19.5618 10.4047 19.5113C10.2812 19.4608 10.1486 19.4348 10.0148 19.4348C9.88093 19.4348 9.7484 19.4608 9.62483 19.5113C9.50127 19.5618 9.38912 19.6358 9.29486 19.729C9.106 19.9154 9 20.1675 9 20.4302C9 20.693 9.106 20.9451 9.29486 21.1315L14.9833 26.7115C15.0781 26.8037 15.1904 26.8767 15.314 26.9262C15.4375 26.9756 15.5698 27.0007 15.7032 27C15.9692 26.9989 16.2242 26.8953 16.413 26.7115L30.7001 12.6968C30.7951 12.6043 30.8705 12.4943 30.922 12.3731C30.9735 12.2519 31 12.1218 31 11.9905C31 11.8592 30.9735 11.7292 30.922 11.608C30.8705 11.4868 30.7951 11.3768 30.7001 11.2843Z"
-                        fill="#D22856" />
+                    <svg width="39" height="39">
+                      <use xlink:href="img/icons/sprite.svg#checkbox"></use>
+                      <use x="9" y="11" width="22" height="16" xlink:href="img/icons/sprite.svg#checkbox-on"></use>
                     </svg>
                     Удержал башню
                   </span>
@@ -164,11 +154,9 @@
                 <label>
                   <input class="visually-hidden" type="checkbox">
                   <span>
-                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <path
-                        d="M30.7001 11.2843C30.5105 11.1021 30.2557 11 29.9903 11C29.7249 11 29.47 11.1021 29.2805 11.2843L15.7032 24.6028L10.7347 19.729C10.6405 19.6358 10.5283 19.5618 10.4047 19.5113C10.2812 19.4608 10.1486 19.4348 10.0148 19.4348C9.88093 19.4348 9.7484 19.4608 9.62483 19.5113C9.50127 19.5618 9.38912 19.6358 9.29486 19.729C9.106 19.9154 9 20.1675 9 20.4302C9 20.693 9.106 20.9451 9.29486 21.1315L14.9833 26.7115C15.0781 26.8037 15.1904 26.8767 15.314 26.9262C15.4375 26.9756 15.5698 27.0007 15.7032 27C15.9692 26.9989 16.2242 26.8953 16.413 26.7115L30.7001 12.6968C30.7951 12.6043 30.8705 12.4943 30.922 12.3731C30.9735 12.2519 31 12.1218 31 11.9905C31 11.8592 30.9735 11.7292 30.922 11.608C30.8705 11.4868 30.7951 11.3768 30.7001 11.2843Z"
-                        fill="#D22856" />
+                    <svg width="39" height="39">
+                      <use xlink:href="img/icons/sprite.svg#checkbox"></use>
+                      <use x="9" y="11" width="22" height="16" xlink:href="img/icons/sprite.svg#checkbox-on"></use>
                     </svg>
                     Разгромил отель
                   </span>
@@ -178,18 +166,18 @@
           </fieldset>
         </div>
 
-          <fieldset class="user-contacts form__fieldset container">
-            <legend class="form__legend mobile-hidden">Контактная информация</legend>
-            <label>
-              <span>Номер телефона</span>
-              <input type="number" placeholder="Номер, пожалуйста">
-            </label>
+        <fieldset class="user-contacts form__fieldset container">
+          <legend class="form__legend mobile-hidden">Контактная информация</legend>
+          <label>
+            <span>Номер телефона</span>
+            <input type="number" placeholder="Номер, пожалуйста">
+          </label>
 
-            <label>
-              <span>Адрес почты</span>
-              <input type="email" placeholder="Введите почту *">
-            </label>
-          </fieldset>
+          <label>
+            <span>Адрес почты</span>
+            <input type="email" placeholder="Введите почту *">
+          </label>
+        </fieldset>
 
         <div class="apps form__fieldset-wrapper--mobile-grey">
           <fieldset class="apps__fieldset form__fieldset container">
@@ -199,9 +187,9 @@
                 <label>
                   <input class="visually-hidden" type="radio" name="app" checked>
                   <span>
-                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <circle cx="20.5" cy="20.5" r="7.5" fill="#D22856" />
+                    <svg width="41" height="41">
+                      <use xlink:href="img/icons/sprite.svg#radio"></use>
+                      <use xlink:href="img/icons/sprite.svg#radio-on" x="13" y="13" width="15" height="15"></use>
                     </svg>
                     Pink для iOS
                   </span>
@@ -212,9 +200,9 @@
                 <label>
                   <input class="visually-hidden" type="radio" name="app">
                   <span>
-                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <circle cx="20.5" cy="20.5" r="7.5" fill="#D22856" />
+                    <svg width="41" height="41">
+                      <use xlink:href="img/icons/sprite.svg#radio"></use>
+                      <use xlink:href="img/icons/sprite.svg#radio-on" x="13" y="13" width="15" height="15"></use>
                     </svg>
                     Pink на Android
                   </span>
@@ -225,9 +213,9 @@
                 <label>
                   <input class="visually-hidden" type="radio" name="app">
                   <span>
-                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#E5E5E5" stroke-width="2" />
-                      <circle cx="20.5" cy="20.5" r="7.5" fill="#D22856" />
+                    <svg width="41" height="41">
+                      <use xlink:href="img/icons/sprite.svg#radio"></use>
+                      <use xlink:href="img/icons/sprite.svg#radio-on" x="13" y="13" width="15" height="15"></use>
                     </svg>
                     Windows Phone
                   </span>
@@ -237,15 +225,15 @@
           </fieldset>
         </div>
 
-          <fieldset class="emotions form__fieldset container">
-            <legend class="form__legend emotions__legend">Опишите свои эмоции</legend>
-            <textarea class="form__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
+        <fieldset class="emotions form__fieldset container">
+          <legend class="form__legend emotions__legend">Опишите свои эмоции</legend>
+          <textarea class="form__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
 
-          <div class="submit form__submit-wrapper container">
-            <button class="submit-button form__submit-button" type="submit">Отправить форму</button>
-            <p class="form__note"><span class="red">*</span> - Обязательные поля</p>
-          </div>
+        <div class="submit form__submit-wrapper container">
+          <button class="submit-button form__submit-button" type="submit">Отправить форму</button>
+          <p class="form__note"><span class="red">*</span> - Обязательные поля</p>
+        </div>
       </form>
     </section>
 
@@ -262,32 +250,46 @@
         уже поступила к нам. В ближайшее
         время мы рассмотрим ее и
         оповестим вас.</p>
-      <button class="submit-button" type="button">Закрыть окно</button>
+
+      <p class="modal__footer">
+        <button class="submit-button" type="button">Закрыть окно</button>
+      </p>
     </aside>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <img src="img/logos/footer-logo.svg" alt="Pink - фотоприложение для раскрашивания серых будней" width="145"
-        height="40">
+    <a class="page-footer__logo logo" href="index.html">
+      <svg width="145" height="40">
+        <use xlink:href="img/icons/sprite.svg#footer-logo"></use>
+      </svg>
     </a>
 
     <section class="social">
       <h2 class="visually-hidden">Давайте дружить!</h2>
-      <a class="social__link" href="#"><span class="visually-hidden">Мы в Твиттер</span><img src="img/logos/twitter.svg"
-          alt="Наш Twitter" width="18" height="14"></a>
-      <a class="social__link" href="#"><span class="visually-hidden">Мы в Фейсбук</span><img
-          src="img/logos/facebook.svg" alt="Наш Facebook" width="9" height="18"></a>
-      <a class="social__link" href="#"><span class="visually-hidden">Мы в Ютуб</span><img src="img/logos/youtube.svg"
-          alt="Наш YouTube" width="15" height="13"></a>
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Мы в Твиттер</span>
+        <svg width="18" height="14">
+          <use xlink:href="img/icons/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Мы в Фейсбук</span>
+        <svg width="9" height="18">
+          <use xlink:href="img/icons/sprite.svg#facebook"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Мы в Ютуб</span>
+        <svg width="15" height="13">
+          <use xlink:href="img/icons/sprite.svg#youtube"></use>
+        </svg>
+      </a>
     </section>
 
     <p class="developed"><a href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-            fill="#D22856" />
+        <svg width="27" height="34" viewBox="0 0 27 34">
+          <use xlink:href="img/icons/sprite.svg#html-academy"></use>
         </svg>
       </a></p>
   </footer>

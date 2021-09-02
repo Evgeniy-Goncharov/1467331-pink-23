@@ -19,6 +19,18 @@
   }
 }
 
+.tablet-only {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .page-body {
   margin: 0;
   padding: 0;

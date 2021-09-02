@@ -1,9 +1,9 @@
 .photos {
   background-color: @basic-white;
-  padding-top: 54px;
+  padding-top: 44px;
 
   @media (min-width: 660px) {
-    padding-top: 100px;
+    padding-top: 90px;
   }
 }
 
@@ -13,22 +13,26 @@
   line-height: 30px;
   font-weight: normal;
   font-style: normal;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
 
   @media (min-width: 660px) {
-    margin-bottom: 85px;
+    margin-bottom: 78px;
     font-size: 18px;
     line-height: 30px;
   }
 }
 
 .photos__section-heading {
-  @media (min-width: 1200px) {
+  padding: 0 15px;
+
+  @media (min-width: 660px) {
     max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 97px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 90px;
   }
 }
 
@@ -59,13 +63,18 @@
 
 .photos__item {
   background-color: @basic-grey;
+  margin-bottom: 20px;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   @media (min-width: 660px) {
     width: min-content;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 53px;
   }
 }
 
@@ -91,6 +100,15 @@
     top: 0;
     right: 20px;
     background: url("../img/logos/pan-of-day.png") no-repeat center;
+
+    @media (min-width: 660px) {
+      top: 57px;
+    }
+
+    @media (min-width: 1200px) {
+      top: 54px;
+      right: 130px;
+    }
   }
 }
 
@@ -119,17 +137,34 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 155px;
   box-sizing: border-box;
-  padding: 20px 30px;
+  padding: 18px 12px 20px 17px;
   background-color: @basic-grey;
+
+  @media (min-width: 660px) {
+    padding: 22px 30px 23px 30px;
+    min-height: 155px;
+  }
 
   &--panorama {
     flex-direction: row;
     flex-wrap: wrap;
 
     .photos__description {
-      order: 3;
+      margin-bottom: 9px;
+    }
+
+    @media (min-width: 660px) {
+      padding: 23px 30px 15px 30px;
+      min-height: 120px;
+
+      .photos__description {
+        order: 3;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 96px;
     }
   }
 }
@@ -137,6 +172,7 @@
 .photos__author {
   margin: 0;
   padding: 0;
+  line-height: 24px;
 }
 
 .photos__name {
@@ -158,7 +194,12 @@
 .photos__description {
   line-height: 24px;
   margin: 0;
+  margin-bottom: 9px;
   flex-grow: 1;
+
+  @media (min-width: 660px) {
+    margin-bottom: 13px;
+  }
 }
 
 .photos__likes {
@@ -193,6 +234,10 @@
 
 .photos__figure:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 51px;
+  }
 }
 
 .editor {
@@ -204,21 +249,20 @@
 }
 
 .editor__section-heading {
-  padding-top: 49px;
-  padding-bottom: 52px;
+  padding-top: 43px;
+  padding-bottom: 42px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: @basic-white;
   margin: 0;
 
   @media (min-width: 660px) {
-    padding-top: 73px;
-    padding-bottom: 78px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 67px;
-    padding-bottom: 75px;
+    padding-top: 5px;
+    padding-bottom: 67px;
   }
 }
 
@@ -229,8 +273,14 @@
   @media (min-width: 660px) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 54px;
+    padding-bottom: 30px;
     padding-top: 57px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 47px;
+    margin-bottom: 40px;
   }
 }
 
@@ -251,15 +301,17 @@
 
 .editor__form {
   padding-top: 42px;
-  padding-bottom: 41px;
+  padding-bottom: 27px;
+  margin-bottom: 10px;
 
   @media (min-width: 660px) {
-    width: 50%;
+    width: 45%;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   @media (min-width: 1200px) {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,7 +326,11 @@
 
   @media (min-width: 660px) {
     display: block;
-    margin-bottom: 67px;
+    margin-bottom: 66px;
+
+    label:first-child {
+      padding-top: 0;
+    }
 
     label {
       width: 275px;
@@ -282,9 +338,9 @@
       justify-content: space-between;
       align-items: center;
       box-sizing: border-box;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      padding-left: 18px;
+      padding-top: 16px;
+      padding-bottom: 17px;
+      padding-left: 4px;
       padding-right: 18px;
       margin-right: 0;
       margin-left: auto;
@@ -294,11 +350,12 @@
 
   @media (min-width: 1200px) {
     padding-right: 60px;
-    margin-bottom: 140px;
+    margin-bottom: 153px;
 
     label {
       width: 100%;
       padding-left: 0;
+      padding-bottom: 11px;
     }
 
     label:first-child {
@@ -315,8 +372,9 @@
   border: none;
   border-bottom: 1px solid fade(@basic-blue, 10%);
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 38px;
   padding: 0;
+  padding-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -324,11 +382,15 @@
 
   label {
     cursor: pointer;
-    margin-bottom: 34px;
+    margin-bottom: 11px;
+
+    .editor-controls__span {
+      opacity: 0.3;
+    }
   }
 
   label:not(:nth-last-child(2)) {
-    margin-right: 35px;
+    margin-right: 40px;
   }
 
   label:last-child {
@@ -338,9 +400,13 @@
   }
 
   label:hover {
-    g {
+    .editor-controls__span {
       opacity: 0.5;
     }
+  }
+
+  label:hover input[type="radio"]:checked + .editor-controls__span {
+    opacity: 1;
   }
 
   @media (min-width: 660px) {
@@ -352,52 +418,32 @@
   display: block;
 
   svg {
-    g {
-      opacity: 0.3;
-    }
-
-    path {
-      fill: @basic-blue;
-    }
+    fill: @basic-red;
   }
 
   @media (min-width: 660px) {
     display: block;
     margin: 0;
     padding: 0;
-    width: 22px;
-    height: 22px;
     text-align: center;
 
-    svg {
-      margin: 0;
-      padding: 0;
-
-      g {
-        opacity: 1;
-      }
-
-      path {
-        fill: @basic-red;
-      }
+    svg:not(.tablet-only) {
+      display: none;
     }
   }
 
   @media (min-width: 1200px) {
-    width: 44px;
-    height: 44px;
+    svg:not(.tablet-only) {
+      display: block;
+    }
   }
 }
 
 input:checked + .editor-controls__span {
-  svg {
-    g {
-      opacity: 1;
-    }
+  opacity: 1;
 
-    path {
-      fill: @basic-red;
-    }
+  svg {
+    fill: @basic-red;
   }
 }
 
@@ -442,7 +488,6 @@ input[type="range"] {
 }
 
 .editor__buttons {
-  margin: 0 20px;
   padding: 0;
 
   @media (min-width: 1200px) {
@@ -500,6 +545,9 @@ input[type="range"] {
   }
 
   @media (min-width: 660px) {
+    max-width: 260px;
+    margin: 0 auto;
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
