@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк - конкурс</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="favicon.ico" rel="icon">
   <link href="img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="img/favicons/180.png" rel="apple-touch-icon">
@@ -17,9 +17,9 @@
     <div class="page-header__flex">
       <a class="page-header__logo" href="index.html">
         <svg width="74" height="23">
-          <use xlink:href="img/icons/sprite.svg#logo--mobile"></use>
-          <use xlink:href="img/icons/sprite.svg#logo--tablet"></use>
-          <use xlink:href="img/icons/sprite.svg#logo--desktop"></use>
+          <use xlink:href="img/sprite.svg#logo--mobile"></use>
+          <use xlink:href="img/sprite.svg#logo--tablet"></use>
+          <use xlink:href="img/sprite.svg#logo--desktop"></use>
         </svg>
       </a>
 
@@ -36,16 +36,7 @@
     </div>
   </header>
 
-  <script>
-    var header = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.nav-toggle');
 
-    header.classList.remove('page-header--no-js');
-
-    navToggle.addEventListener('click', function () {
-      header.classList.toggle('page-header--nav-opened')
-    });
-  </script>
 
   <main class="page-main page__main photos-main">
     <div class="photos-main__bg-wrapper">
@@ -59,9 +50,12 @@
 
       <blockquote class="photos__figure photos__figure--panorama photos__figure--panorama-of-day">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/panorama-1--desktop.webp 1x, img/gallery/panorama-1--desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/panorama-1--tablet.webp 1x, img/gallery/panorama-1--tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/gallery/panorama-1--mobile.webp 1x, img/gallery/panorama-1--mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/gallery/panorama-1--desktop.webp 1x, img/gallery/panorama-1--desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/gallery/panorama-1--tablet.webp 1x, img/gallery/panorama-1--tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/gallery/panorama-1--mobile.webp 1x, img/gallery/panorama-1--mobile@2x.webp 2x">
           <source media="(min-width: 1200px)"
             srcset="img/gallery/panorama-1--desktop.jpg 1x, img/gallery/panorama-1--desktop@2x.jpg 2x">
           <source media="(min-width: 660px)"
@@ -88,6 +82,12 @@
         <li class="photos__item">
           <blockquote class="photos-figure photos__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/photo-1--desktop.webp 1x, img/gallery/photo-1--desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/gallery/photo-1--tablet.webp 1x, img/gallery/photo-1--tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery/photo-1--mobile.webp 1x, img/gallery/photo-1--mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/gallery/photo-1--desktop.jpg 1x, img/gallery/photo-1--desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -111,6 +111,12 @@
         <li class="photos__item">
           <blockquote class="photos-figure photos__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/photo-2--desktop.webp 1x, img/gallery/photo-2--desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/gallery/photo-2--tablet.webp 1x, img/gallery/photo-2--tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery/photo-2--mobile.webp 1x, img/gallery/photo-2--mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/gallery/photo-2--desktop.jpg 1x, img/gallery/photo-2--desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -133,6 +139,12 @@
         <li class="photos__item">
           <blockquote class="photos-figure photos__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/photo-3--desktop.webp 1x, img/gallery/photo-3--desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/gallery/photo-3--tablet.webp 1x, img/gallery/photo-3--tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery/photo-3--mobile.webp 1x, img/gallery/photo-3--mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/gallery/photo-3--desktop.jpg 1x, img/gallery/photo-3--desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -156,6 +168,12 @@
         <li class="photos__item">
           <blockquote class="photos-figure photos__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/photo-4--desktop.webp 1x, img/gallery/photo-4--desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/gallery/photo-4--tablet.webp 1x, img/gallery/photo-4--tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery/photo-4--mobile.webp 1x, img/gallery/photo-4--mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/gallery/photo-4--desktop.jpg 1x, img/gallery/photo-4--desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -179,6 +197,12 @@
         <li class="photos__item">
           <blockquote class="photos-figure photos__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/photo-5--desktop.webp 1x, img/gallery/photo-5--desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/gallery/photo-5--tablet.webp 1x, img/gallery/photo-5--tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery/photo-5--mobile.webp 1x, img/gallery/photo-5--mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/gallery/photo-5--desktop.jpg 1x, img/gallery/photo-5--desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -202,6 +226,12 @@
         <li class="photos__item">
           <blockquote class="photos-figure photos__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/photo-6--desktop.webp 1x, img/gallery/photo-6--desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/gallery/photo-6--tablet.webp 1x, img/gallery/photo-6--tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery/photo-6--mobile.webp 1x, img/gallery/photo-6--mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/gallery/photo-6--desktop.jpg 1x, img/gallery/photo-6--desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -228,6 +258,10 @@
         телефоне!</h2>
       <div class="editor__flex-wrapper container">
         <picture>
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/gallery/user-photo--tablet.webp 1x, img/gallery/user-photo--tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/gallery/user-photo--mobile.webp 1x, img/gallery/user-photo--mobile@2x.webp 2x">
           <source media="(min-width: 660px)"
             srcset="img/gallery/user-photo--tablet.jpg 1x, img/gallery/user-photo--tablet@2x.jpg 2x">
           <img class="editor__image" src="img/gallery/user-photo--mobile.jpg"
@@ -241,7 +275,7 @@
               <input class="visually-hidden" type="radio" name="action" checked>
               <span class="editor-controls__span">
                 <svg width="44" height="44">
-                  <use xlink:href="img/icons/sprite.svg#editor-cut">
+                  <use xlink:href="img/sprite.svg#editor-cut">
                 </svg>
               </span>
               <span class="visually-hidden">Обрезать</span>
@@ -251,7 +285,7 @@
               <input class="visually-hidden" type="radio" name="action">
               <span class="editor-controls__span">
                 <svg width="48" height="43">
-                  <use xlink:href="img/icons/sprite.svg#editor-fill">
+                  <use xlink:href="img/sprite.svg#editor-fill">
                 </svg>
               </span>
               <span class="visually-hidden">Залить</span>
@@ -261,7 +295,7 @@
               <input class="visually-hidden" type="radio" name="action">
               <span class="editor-controls__span">
                 <svg width="32" height="32">
-                  <use xlink:href="img/icons/sprite.svg#editor-filter">
+                  <use xlink:href="img/sprite.svg#editor-filter">
                 </svg>
               </span>
               <span class="visually-hidden">Фильтр</span>
@@ -277,10 +311,10 @@
               <span class="visually-hidden">Размер</span>
               <span class="editor-controls__span">
                 <svg width="22" height="22" class="tablet-only">
-                  <use xlink:href="img/icons/sprite.svg#editor-cut">
+                  <use xlink:href="img/sprite.svg#editor-cut">
                 </svg>
                 <svg width="44" height="44">
-                  <use xlink:href="img/icons/sprite.svg#editor-cut">
+                  <use xlink:href="img/sprite.svg#editor-cut">
                 </svg>
               </span>
               <input type="range">
@@ -290,10 +324,10 @@
               <span class="visually-hidden">Заливка</span>
               <span class="editor-controls__span">
                 <svg width="24" height="22" class="tablet-only">
-                  <use xlink:href="img/icons/sprite.svg#editor-fill">
+                  <use xlink:href="img/sprite.svg#editor-fill">
                 </svg>
                 <svg width="48" height="43">
-                  <use xlink:href="img/icons/sprite.svg#editor-fill">
+                  <use xlink:href="img/sprite.svg#editor-fill">
                 </svg>
               </span>
               <input type="range">
@@ -302,10 +336,10 @@
               <span class="visually-hidden">Контраст</span>
               <span class="editor-controls__span">
                 <svg width="16" height="16" class="tablet-only">
-                  <use xlink:href="img/icons/sprite.svg#editor-filter">
+                  <use xlink:href="img/sprite.svg#editor-filter">
                 </svg>
                 <svg width="32" height="32">
-                  <use xlink:href="img/icons/sprite.svg#editor-filter">
+                  <use xlink:href="img/sprite.svg#editor-filter">
                 </svg>
               </span>
               <input type="range">
@@ -324,7 +358,7 @@
   <footer class="page-footer">
     <a class="page-footer__logo logo" href="index.html">
       <svg width="145" height="40">
-        <use xlink:href="img/icons/sprite.svg#footer-logo"></use>
+        <use xlink:href="img/sprite.svg#footer-logo"></use>
       </svg>
     </a>
 
@@ -333,19 +367,19 @@
       <a class="social__link" href="#">
         <span class="visually-hidden">Мы в Твиттер</span>
         <svg width="18" height="14">
-          <use xlink:href="img/icons/sprite.svg#twitter"></use>
+          <use xlink:href="img/sprite.svg#twitter"></use>
         </svg>
       </a>
       <a class="social__link" href="#">
         <span class="visually-hidden">Мы в Фейсбук</span>
         <svg width="9" height="18">
-          <use xlink:href="img/icons/sprite.svg#facebook"></use>
+          <use xlink:href="img/sprite.svg#facebook"></use>
         </svg>
       </a>
       <a class="social__link" href="#">
         <span class="visually-hidden">Мы в Ютуб</span>
         <svg width="15" height="13">
-          <use xlink:href="img/icons/sprite.svg#youtube"></use>
+          <use xlink:href="img/sprite.svg#youtube"></use>
         </svg>
       </a>
     </section>
@@ -353,10 +387,12 @@
     <p class="developed"><a href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/sprite.svg#html-academy"></use>
+          <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </a></p>
   </footer>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

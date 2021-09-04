@@ -415,17 +415,22 @@
 }
 
 .editor-controls__span {
-  display: block;
-
   svg {
-    fill: @basic-red;
+    fill: @basic-blue;
+    vertical-align: middle;
   }
 
   @media (min-width: 660px) {
+    width: 24px;
+    height: 24px;
     display: block;
     margin: 0;
     padding: 0;
     text-align: center;
+
+    svg {
+      fill: @basic-red;
+    }
 
     svg:not(.tablet-only) {
       display: none;
@@ -433,8 +438,12 @@
   }
 
   @media (min-width: 1200px) {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+
     svg:not(.tablet-only) {
-      display: block;
+      display: inline-block;
     }
   }
 }
