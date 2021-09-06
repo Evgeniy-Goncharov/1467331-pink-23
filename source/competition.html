@@ -13,7 +13,7 @@
 </head>
 
 <body class="page-body competition-body">
-  <header class="page-header page-body__page-header page-header--no-js">
+  <header class="page__header page__header--no-js">
     <div class="page-header__flex">
       <a class="page-header__logo" href="index.html">
         <svg width="74" height="23">
@@ -35,8 +35,6 @@
       </nav>
     </div>
   </header>
-
-
 
   <main class="page-main competition-main">
     <div class="competition-main__bg-wrapper">
@@ -217,12 +215,12 @@
 
         <fieldset class="emotions form__fieldset container">
           <legend class="form__legend emotions__legend">Опишите свои эмоции</legend>
-          <textarea class="form__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="submit form__submit-wrapper container">
           <button class="submit-button form__submit-button" type="submit">Отправить форму</button>
-          <p class="form__note"><span class="red">*</span> - Обязательные поля</p>
+          <p class="form__note"><span class="red">*</span> - Обязательные <span class="text--desktop-only">для заполнения</span> поля</p>
         </div>
       </form>
     </section>

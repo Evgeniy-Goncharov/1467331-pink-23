@@ -95,6 +95,28 @@
     text-transform: uppercase;
     font-size: 16px;
     line-height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:first-of-type {
+      background-color: transparent;
+      background-image: url("../img/bg/th-left-bg.svg");
+      background-position: top left;
+
+      @media (min-width: 1200px) {
+        background-image: url("../img/bg/th-left-bg--desktop.svg")
+      }
+    }
+
+    &:last-of-type {
+      background-color: transparent;
+      background-image: url("../img/bg/th-right-bg.svg");
+      background-position: top right;
+
+      @media (min-width: 1200px) {
+        background-image: url("../img/bg/th-right-bg--desktop.svg")
+      }
+    }
 
     span {
       display: block;
@@ -117,10 +139,16 @@
   }
 
   &--cell.tariffs__caption--hit::before {
-    width: 61px;
-    height: 61px;
+    width: 59px;
+    height: 59px;
     left: 0;
     background: url("../img/logos/hit-table.svg") no-repeat center;
+    background-size: contain;
+
+    @media (min-width: 1200px) {
+      width: 74px;
+      height: 74px;
+    }
   }
 }
 

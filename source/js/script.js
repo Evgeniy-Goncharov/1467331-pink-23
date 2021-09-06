@@ -1,8 +1,8 @@
-var header = document.querySelector('.page-header');
+var header = document.querySelector('.page__header');
 var navToggle = document.querySelector('.nav-toggle');
 
-header.classList.remove('page-header--no-js');
+header.classList.remove('page__header--no-js');
 
 navToggle.addEventListener('click', function () {
-  header.classList.toggle('page-header--nav-opened')
+  header.classList.toggle('page__header--nav-opened')
 });

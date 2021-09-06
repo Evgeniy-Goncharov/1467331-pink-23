@@ -62,7 +62,7 @@
 
 .form__fieldset-wrapper--mobile-grey {
   background-color: @basic-grey;
-  padding-top: 38px;
+  padding-top: 42px;
 
   @media (min-width: 660px) {
     background: transparent;
@@ -73,7 +73,7 @@
 .form__fieldset {
   border: none;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 41px;
   box-sizing: border-box;
 
@@ -120,6 +120,10 @@
 
     use:last-child {
       display: none;
+    }
+
+    @media (min-width: 660px) {
+      margin-bottom: 0;
     }
   }
 
@@ -195,12 +199,24 @@
     color: @basic-blue;
     text-transform: none;
     padding: 0;
+    padding-left: 59px;
     margin: 0;
     display: flex;
     align-items: center;
+    position: relative;
+    min-height: 39px;
 
     svg {
       margin-right: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 39px;
+      height: 39px;
+    }
+
+    @media (min-width: 660px) {
+      padding-left: 56px;
     }
   }
 
@@ -214,16 +230,24 @@
     color: @basic-blue;
     text-transform: none;
     padding: 0;
+    padding-left: 70px;
     margin: 0;
     display: flex;
     align-items: center;
+    min-height: 41px;
+    position: relative;
 
     svg {
       margin-right: 31px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 41px;
+      height: 41px;
+    }
 
-      @media (min-width: 660px) {
-        margin-right: 18px;
-      }
+    @media (min-width: 660px) {
+      padding-left: 59px;
     }
   }
 
@@ -289,7 +313,7 @@
 
 .user-contacts {
   @media (min-width: 660px) {
-    padding: 37px 60px 23px 60px;
+    padding: 37px 60px 30px 60px;
   }
 
   @media (min-width: 980px) {
@@ -301,7 +325,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 6px;
+    padding-bottom: 11px;
 
     label:first-of-type {
       margin-right: 74px;
@@ -314,7 +338,7 @@
     @media (min-width: 660px) {
       flex-direction: column-reverse;
       align-items: stretch;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
 
       span {
         padding-left: 15px;
@@ -368,8 +392,8 @@
   }
 
   @media (min-width: 660px) {
-    padding-top: 28px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: 1200px) {
