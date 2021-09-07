@@ -2,21 +2,20 @@
   background-color: @basic-grey;
   padding-bottom: 70px;
 
+  &--mobile {
+    padding-bottom: 42px;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
+  }
+
   @media (min-width: 1200px) {
     padding-bottom: 94px;
   }
 }
 
-.tariffs--mobile {
-  background-color: @basic-grey;
-  padding-bottom: 42px;
-
-  @media (min-width: 660px) {
-    display: none;
-  }
-}
-
-.tariffs--table {
+.tariffs__table {
   width: 100%;
 
   td {
@@ -38,9 +37,13 @@
   }
 }
 
-.tariff {
+.tariffs__item {
   display: none;
   margin-bottom: 26px;
+
+  &--current {
+    display: block;
+  }
 }
 
 .tariffs__caption-wrapper {
@@ -58,10 +61,6 @@
     margin: 0;
     padding: 0;
   }
-}
-
-.tariff--current {
-  display: block;
 }
 
 .tariffs__caption {
@@ -173,6 +172,6 @@ td {
   border: none;
 }
 
-.null-cell {
+.tariffs__null-cell {
   background-color: @basic-grey;
 }

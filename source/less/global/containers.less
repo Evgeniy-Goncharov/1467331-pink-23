@@ -1,0 +1,49 @@
+.container {
+  margin: 0 20px;
+  max-width: 940px;
+
+  @media (min-width: 980px) {
+    margin: 0 auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.mobile-hidden {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+}
+
+.tablet-only {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: inline-block;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.text--desktop-only {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: inline;
+  }
+}
