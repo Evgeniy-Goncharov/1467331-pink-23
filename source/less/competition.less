@@ -281,6 +281,10 @@
       background: url("../img/logos/mail.svg") no-repeat center right;
     }
   }
+
+  &::-webkit-input-placeholder {
+    color: @basic-blue;
+  }
 }
 
 .competition__textarea {
@@ -314,21 +318,6 @@
 
 .competition__modal-warning {
   padding-bottom: 52px;
-}
-
-.competition__modal-warning,
-.competition__modal-done {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-
-  &--opened {
-    display: block;
-  }
 }
 
 @media (min-width: 660px) {
