@@ -54,6 +54,15 @@ const script = () => {
 
 exports.script = script;
 
+const scriptModal = () => {
+  return gulp.src("source/js/modal.js")
+  .pipe(terser())
+  .pipe(rename("modal.min.js"))
+  .pipe(gulp.dest("build/js"))
+}
+
+exports.script = scriptModal;
+
 // Images
 
 const optimizeImages = () => {
@@ -160,6 +169,7 @@ const build = gulp.series(
     styles,
     html,
     script,
+    scriptModal,
     sprite,
     createWebp
   )
@@ -177,6 +187,7 @@ exports.default = gulp.series(
     html,
     styles,
     script,
+    scriptModal,
     sprite,
     createWebp
   ),

@@ -9,7 +9,8 @@ const submitButton = document.querySelector('.submit__button');
     const userPhone = document.querySelector('.competition__user-phone');
     const userMail = document.querySelector('.competition__user-mail');
 
-    submitButton.addEventListener('click', function () {
+    submitButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
       if (!userSurname.value || !userSurname.value || !userPatronymic.value || !userPhone.value || !userMail.value) {
         modalWarning.classList.add('competition-main__modal-warning--opened');
       }
@@ -19,10 +20,10 @@ const submitButton = document.querySelector('.submit__button');
       };
     });
 
-    modalWarningButton.addEventListener('click', function () {
+    modalWarningButton.addEventListener('click', function() {
       modalWarning.classList.remove('competition-main__modal-warning--opened');
     });
 
-    modalDoneButton.addEventListener('click', function () {
+    modalDoneButton.addEventListener('click', function() {
       modalDone.classList.remove('competition-main__modal-done--opened');
     });

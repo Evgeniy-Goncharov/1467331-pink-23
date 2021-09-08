@@ -161,15 +161,15 @@
 }
 
 .competition__fieldset input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   color: @basic-black;
   border: 2px solid @basic-dark-grey;
   border-radius: 1px;
-  padding: 17px 20px;
+  padding: 10px 20px;
   margin: 0;
   box-sizing: border-box;
-  min-height: 63px;
+  min-height: 61px;
 
   & + span {
     font-size: 18px;
@@ -186,18 +186,22 @@
     }
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &[type="text"]:hover,
   &[type="number"]:hover,
-  &[type="email"]:hover,
-  &[type="text"]:focus,
-  &[type="number"]:focus,
-  &[type="email"]:focus {
+  &[type="email"]:hover {
     border-color: @basic-blue;
   }
 
   &[type="text"]:active,
   &[type="number"]:active,
-  &[type="email"]:active {
+  &[type="email"]:active,
+  &[type="text"]:focus,
+  &[type="number"]:focus,
+  &[type="email"]:focus {
     border-color: @basic-red;
   }
 
@@ -269,6 +273,13 @@
   }
 
   &[type="number"] {
+    appearance: textfield;
+
+    &:hover,
+    &:focus {
+      appearance: number-input;
+    }
+
     @media (min-width: 660px) {
       padding-right: 70px;
       background: url("../img/logos/phone.svg") no-repeat center right;
@@ -282,8 +293,9 @@
     }
   }
 
-  &::-webkit-input-placeholder {
+  &::placeholder {
     color: @basic-blue;
+    opacity: 1;
   }
 }
 
