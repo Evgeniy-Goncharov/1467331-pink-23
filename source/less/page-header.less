@@ -21,7 +21,7 @@
       border-top: 1px solid @basic-black;
     }
 
-    .nav-toggle {
+    .page-header__nav-toggle {
       display: none;
     }
   }
@@ -35,7 +35,7 @@
 .page__header--nav-opened {
   background-color: @basic-blue;
 
-  .nav-toggle {
+  .page-header__nav-toggle {
     box-shadow: none;
 
     &:hover::before {
@@ -57,8 +57,8 @@
     }
   }
 
-  .nav-toggle::before,
-  .nav-toggle::after {
+  .page-header__nav-toggle::before,
+  .page-header__nav-toggle::after {
     content: "";
     width: 34px;
     height: 3px;
@@ -72,11 +72,11 @@
     box-shadow: none;
   }
 
-  .nav-toggle::before {
+  .page-header__nav-toggle::before {
     transform: rotate(45deg);
   }
 
-  .nav-toggle::after {
+  .page-header__nav-toggle::after {
     transform: rotate(-45deg);
   }
 
@@ -154,7 +154,7 @@
   }
 }
 
-.nav-toggle {
+.page-header__nav-toggle {
   position: relative;
   display: block;
   margin-top: 21px;
@@ -195,87 +195,6 @@
 
   @media (min-width: 1200px) {
     display: none;
-  }
-}
-
-.main-nav {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: none;
-  width: 100%;
-
-  @media (min-width: 1200px) {
-    display: block;
-    max-width: 620px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: initial;
-  }
-}
-
-.main-nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: @basic-blue;
-
-  @media (min-width: 1200px) {
-    background: transparent;
-    border: none;
-  }
-}
-
-.main-nav__list {
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-.main-nav__item {
-  box-shadow: inset 0 -1px 0 @basic-black, inset 0 1px 0 @special-white-shadow;
-  padding: 0 25px;
-  text-align: center;
-
-  a {
-    display: block;
-    color: @basic-white;
-    text-decoration: none;
-    padding-top: 11px;
-    padding-bottom: 11px;
-
-    &:hover {
-      color: @basic-red;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
-  &--current {
-    @media (min-width: 1200px) {
-      border-bottom: 2px solid @basic-white;
-
-      a:hover,
-      a:active {
-        color: @basic-white;
-        opacity: 1;
-      }
-    }
-  }
-
-  @media (min-width: 1200px) {
-    box-shadow: none;
-    padding: 0;
-
-    a:active {
-      color: @basic-white;
-      opacity: 0.3;
-    }
   }
 }
 

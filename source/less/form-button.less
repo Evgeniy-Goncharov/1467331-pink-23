@@ -1,0 +1,26 @@
+.form-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  color: @basic-white;
+  text-transform: uppercase;
+  background-color: @basic-green;
+  border: none;
+  border-radius: 1px;
+  box-sizing: border-box;
+  padding: 10px;
+
+  &:hover {
+    background-color: @basic-dark-green;
+  }
+
+  &:active {
+    color: fade(@basic-white, 30%);
+  }
+}

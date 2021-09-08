@@ -1,0 +1,63 @@
+.button {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  color: @basic-white;
+  box-sizing: border-box;
+  border: 3px solid @basic-white;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  background: transparent;
+  padding: 10px;
+  min-height: 55px;
+
+  &:hover {
+    background-color: @basic-white;
+    color: @basic-red;
+  }
+
+  &:active {
+    color: fade(@basic-red, 30%);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 21px;
+  }
+}
+
+.button--red {
+  border-color: @basic-red;
+  color: @basic-red;
+
+  &:hover {
+    background-color: @basic-red;
+    color: @basic-white;
+    opacity: 1;
+  }
+
+  &:active {
+    color: fade(@basic-white, 30%);
+  }
+}
+
+.button--transparent-blue {
+  border: 3px solid @basic-blue;
+  color: @basic-blue;
+  opacity: 0.1;
+
+  &:hover {
+    color: @basic-blue;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: @basic-blue;
+    opacity: 0.3;
+    color: @basic-white;
+  }
+}

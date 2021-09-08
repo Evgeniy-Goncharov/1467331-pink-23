@@ -1,5 +1,5 @@
-var header = document.querySelector('.page__header');
-var navToggle = document.querySelector('.nav-toggle');
+var header = document.querySelector('.page-header');
+var navToggle = document.querySelector('.page-header__nav-toggle');
 
 header.classList.remove('page__header--no-js');
 

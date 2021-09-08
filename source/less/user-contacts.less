@@ -1,0 +1,53 @@
+.user-contacts {
+  @media (min-width: 660px) {
+    padding: 37px 60px 30px 60px;
+  }
+
+  @media (min-width: 980px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 11px;
+
+    label:first-of-type {
+      margin-right: 74px;
+    }
+  }
+
+  label {
+    margin-bottom: 15px;
+
+    @media (min-width: 660px) {
+      flex-direction: column-reverse;
+      align-items: stretch;
+      margin-bottom: 28px;
+
+      span {
+        padding-left: 15px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+      flex-grow: 1;
+    }
+  }
+
+  label:last-child {
+    @media (min-width: 660px) {
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    @media (min-width: 660px) {
+      margin-left: 0;
+      margin-bottom: 8px;
+    }
+  }
+}

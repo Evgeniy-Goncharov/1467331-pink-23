@@ -14,22 +14,22 @@
 </head>
 
 <body class="page-body photos-body">
-  <header class="page__header page__header--no-js">
+  <header class="page-header page__header page__header--no-js">
     <div class="page-header__flex">
       <a class="page-header__logo" href="index.html">
-        <svg width="74" height="23">
+        <svg width="74" height="23" role="img" alt="Перейти на главную страницу приложения Pink">
           <use xlink:href="img/sprite.svg#logo--mobile"></use>
           <use xlink:href="img/sprite.svg#logo--tablet"></use>
           <use xlink:href="img/sprite.svg#logo--desktop"></use>
         </svg>
       </a>
 
-      <button class="nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
+      <button class="page-header__nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
 
       <nav class="main-nav">
-        <ul class="main-nav-list main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item--current"><a>Фотографии</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photos.html">Фотографии</a></li>
           <li class="main-nav__item"><a href="competition.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
@@ -41,7 +41,7 @@
 
   <main class="page-main page__main photos-main">
     <div class="photos-main__bg-wrapper">
-      <h1 class="page-slogan photos-main__page-slogan">Фотографии пользователей</h1>
+      <h1 class="photos-main__page-slogan">Фотографии пользователей</h1>
     </div>
 
     <section class="photos">
@@ -73,7 +73,7 @@
             комментарии свой совет и
             смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+          <p class="photos__likes"><button class="photos__like-button" type="button"><span
                 class="visually-hidden">Поставить
                 лайк</span></button> Нравится: 215</p>
         </div>
@@ -81,7 +81,7 @@
 
       <ul class="photos-list photos__list container">
         <li class="photos__item">
-          <blockquote class="photos-figure photos__figure">
+          <blockquote class="photos__figure">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/gallery/photo-1--desktop.webp 1x, img/gallery/photo-1--desktop@2x.webp 2x">
@@ -102,7 +102,7 @@
               <p class="photos__author"><cite class="photos__name">Левон</cite> <span class="photos__span">(5 часов
                   назад)</span></p>
               <p class="photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+              <p class="photos__likes"><button class="photos__like-button" type="button"><span
                     class="visually-hidden">Поставить
                     лайк</span></button> Нравится: 356</p>
             </div>
@@ -110,7 +110,7 @@
         </li>
 
         <li class="photos__item">
-          <blockquote class="photos-figure photos__figure">
+          <blockquote class="photos__figure">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/gallery/photo-2--desktop.webp 1x, img/gallery/photo-2--desktop@2x.webp 2x">
@@ -130,7 +130,7 @@
               <p class="photos__author"><cite class="photos__name">Антон</cite> <span class="photos__span">(12 часов
                   назад)</span></p>
               <p class="photos__description">Соседи будут рады!</p>
-              <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+              <p class="photos__likes"><button class="photos__like-button" type="button"><span
                     class="visually-hidden">Поставить
                     лайк</span></button> Нравится: 615</p>
             </div>
@@ -138,7 +138,7 @@
         </li>
 
         <li class="photos__item">
-          <blockquote class="photos-figure photos__figure">
+          <blockquote class="photos__figure">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/gallery/photo-3--desktop.webp 1x, img/gallery/photo-3--desktop@2x.webp 2x">
@@ -159,7 +159,7 @@
               <p class="photos__author"><cite class="photos__name">Борис</cite> <span class="photos__span">(20 часов
                   назад)</span></p>
               <p class="photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+              <p class="photos__likes"><button class="photos__like-button" type="button"><span
                     class="visually-hidden">Поставить
                     лайк</span></button> Нравится: 215</p>
             </div>
@@ -167,7 +167,7 @@
         </li>
 
         <li class="photos__item">
-          <blockquote class="photos-figure photos__figure">
+          <blockquote class="photos__figure">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/gallery/photo-4--desktop.webp 1x, img/gallery/photo-4--desktop@2x.webp 2x">
@@ -188,7 +188,7 @@
               <p class="photos__author"><cite class="photos__name">Сергей</cite> <span class="photos__span">(25 часов
                   назад</span></p>
               <p class="photos__description">Самая кубанская в мире!</p>
-              <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+              <p class="photos__likes"><button class="photos__like-button" type="button"><span
                     class="visually-hidden">Поставить
                     лайк</span></button> Нравится: 4</p>
             </div>
@@ -196,7 +196,7 @@
         </li>
 
         <li class="photos__item">
-          <blockquote class="photos-figure photos__figure">
+          <blockquote class="photos__figure">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/gallery/photo-5--desktop.webp 1x, img/gallery/photo-5--desktop@2x.webp 2x">
@@ -217,7 +217,7 @@
               <p class="photos__author"><cite class="photos__name">Максим</cite> <span class="photos__span">(40 часов
                   назад)</span></p>
               <p class="photos__description">Где снег-то?</p>
-              <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+              <p class="photos__likes"><button class="photos__like-button" type="button"><span
                     class="visually-hidden">Поставить лайк</span></button> Нравится: 150
               </p>
             </div>
@@ -225,7 +225,7 @@
         </li>
 
         <li class="photos__item">
-          <blockquote class="photos-figure photos__figure">
+          <blockquote class="photos__figure">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/gallery/photo-6--desktop.webp 1x, img/gallery/photo-6--desktop@2x.webp 2x">
@@ -246,7 +246,7 @@
               <p class="photos__author"><cite class="photos__name">Надежда</cite> <span class="photos__span">(45 часов
                   назад</span></p>
               <p class="photos__description">Всем GM и взаимные лайки!</p>
-              <p class="photos__likes"><button class="like-button likes__like-button" type="button"><span
+              <p class="photos__likes"><button class="photos__like-button" type="button"><span
                     class="visually-hidden">Поставить лайк</span></button> Нравится: 2560</p>
             </div>
           </blockquote>
@@ -271,7 +271,7 @@
         </picture>
 
         <form class="editor__form" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset class="editor__controls--mobile">
+          <fieldset class="editor__controls editor__controls--mobile">
             <label>
               <input class="visually-hidden" type="radio" name="action" checked>
               <span class="editor-controls__span">
@@ -333,6 +333,7 @@
               </span>
               <input type="range">
             </label>
+
             <label>
               <span class="visually-hidden">Контраст</span>
               <span class="editor-controls__span">
@@ -348,8 +349,8 @@
           </fieldset>
 
           <p class="editor__buttons">
-            <button class="editor__button editor__button--active" type="submit">Запостить</button>
-            <button class="editor__button" type="button">Отмена</button>
+            <button class="button button--red editor__button" type="submit">Запостить</button>
+            <button class="button button--transparent-blue editor__button" type="button">Отмена</button>
           </p>
         </form>
       </div>
@@ -357,8 +358,8 @@
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="index.html">
-      <svg width="145" height="40">
+    <a class="page-footer__logo">
+      <svg width="145" height="40" role="img" alt="Pink - фотоприложение для раскрашивания серых будней">
         <use xlink:href="img/sprite.svg#footer-logo"></use>
       </svg>
     </a>
@@ -385,9 +386,9 @@
       </a>
     </section>
 
-    <p class="developed"><a href="https://htmlacademy.ru/intensive/adaptive">
+    <p class="footer__developed"><a href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="27" height="34" viewBox="0 0 27 34">
           <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </a></p>

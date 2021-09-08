@@ -14,23 +14,23 @@
 </head>
 
 <body class="page-body competition-body">
-  <header class="page__header page__header--no-js">
+  <header class="page-header page__header page__header--no-js">
     <div class="page-header__flex">
       <a class="page-header__logo" href="index.html">
-        <svg width="74" height="23">
+        <svg width="74" height="23" role="img" alt="Перейти на главную страницу приложения Pink">
           <use xlink:href="img/sprite.svg#logo--mobile"></use>
           <use xlink:href="img/sprite.svg#logo--tablet"></use>
           <use xlink:href="img/sprite.svg#logo--desktop"></use>
         </svg>
       </a>
 
-      <button class="nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
+      <button class="page-header__nav-toggle" type="button"><span class=visually-hidden>Открыть меню</span></button>
 
       <nav class="main-nav">
-        <ul class="main-nav-list main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photos.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--current"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a href="competition.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
@@ -39,21 +39,18 @@
 
   <main class="page-main competition-main">
     <div class="competition-main__bg-wrapper">
-      <h1 class="page-slogan competition-main__page-slogan">Конкурс на самое безбашенное путешествие с Пинк
+      <h1 class="competition-main__page-slogan">Конкурс на самое безбашенное путешествие с Пинк
       </h1>
     </div>
 
     <section class="competition">
-      <h2 class="competition__heading">Поделитесь своей историей и получите шанс
-        выиграть
-        ценный приз — 1000 миль на вашу
-        бонусную
-        карту!
+      <h2 class="competition__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+        вашу бонусную карту!
         <span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>
       </h2>
 
-      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="user form__fieldset container">
+      <form class="competition__form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="user competition__user competition__fieldset  container">
           <label>
             <span>Фамилия:</span>
             <input type="text" placeholder="Укажите фамилию *">
@@ -70,9 +67,9 @@
           </label>
         </fieldset>
 
-        <div class="achievements form__fieldset-wrapper--mobile-grey">
-          <fieldset class="achievements__fieldset form__fieldset container">
-            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <div class="achievements competition__achievements competition__wrapper competition__wrapper--mobile-grey">
+          <fieldset class="achievements__fieldset competition__fieldset container">
+            <legend class="competition__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list">
               <li class="achievements__item">
                 <label>
@@ -155,8 +152,8 @@
           </fieldset>
         </div>
 
-        <fieldset class="user-contacts form__fieldset container">
-          <legend class="form__legend mobile-hidden">Контактная информация</legend>
+        <fieldset class="user-contacts competition__user-contacts competition__fieldset container">
+          <legend class="competition__legend mobile-hidden">Контактная информация</legend>
           <label>
             <span>Номер телефона</span>
             <input type="number" placeholder="Номер, пожалуйста">
@@ -168,9 +165,9 @@
           </label>
         </fieldset>
 
-        <div class="apps form__fieldset-wrapper--mobile-grey">
-          <fieldset class="apps__fieldset form__fieldset container">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
+        <div class="apps compettion__apps competition__wrapper competition__wrapper--mobile-grey">
+          <fieldset class="apps__fieldset competition__fieldset container">
+            <legend class="competition__legend">С каким приложением путешествовали?</legend>
             <ul class="apps__list">
               <li class="apps__item">
                 <label>
@@ -214,41 +211,42 @@
           </fieldset>
         </div>
 
-        <fieldset class="emotions form__fieldset container">
-          <legend class="form__legend emotions__legend">Опишите свои эмоции</legend>
-          <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <fieldset class="emotions competition__emotions competition__fieldset container">
+          <legend class="competition__legend emotions__legend">Опишите свои эмоции</legend>
+          <textarea class="competition__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
-        <div class="submit form__submit-wrapper container">
-          <button class="submit-button form__submit-button" type="submit">Отправить форму</button>
-          <p class="form__note"><span class="red">*</span> - Обязательные <span class="text--desktop-only">для заполнения</span> поля</p>
+        <div class="submit competition__submit container">
+          <button class="form-button submit__button" type="submit">Отправить форму</button>
+          <p class="competition__note"><span class="red">*</span> - Обязательные <span class="text--desktop-only">для
+              заполнения</span> поля</p>
         </div>
       </form>
     </section>
 
-    <aside class="modal modal-warning">
-      <h2 class="modal-heading modal__heading">Что-то пошло не так!</h2>
-      <p class="modal-description modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их
+    <aside class="modal competition__modal-warning">
+      <h2 class="modal__heading">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их
         заполнить</p>
-      <button class="submit-button " type="button">Ок</button>
+      <button class="form-button modal__button" type="button">Ок</button>
     </aside>
 
-    <aside class="modal modal-done">
-      <h2 class="modal-heading done__heading">Ваша заявка отправлена</h2>
-      <p class="modal-description">Спасибо за ваше участие, ваша заявка
+    <aside class="modal competition__modal-done">
+      <h2 class="modal__heading">Ваша заявка отправлена</h2>
+      <p class="modal__description modal__description--desk-width-380">Спасибо за ваше участие, ваша заявка
         уже поступила к нам. В ближайшее
         время мы рассмотрим ее и
         оповестим вас.</p>
 
       <p class="modal__footer">
-        <button class="submit-button" type="button">Закрыть окно</button>
+        <button class="form-button modal__button modal__button--big-width" type="button">Закрыть окно</button>
       </p>
     </aside>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="index.html">
-      <svg width="145" height="40">
+    <a class="page-footer__logo">
+      <svg width="145" height="40" role="img" alt="Pink - фотоприложение для раскрашивания серых будней">
         <use xlink:href="img/sprite.svg#footer-logo"></use>
       </svg>
     </a>
@@ -275,7 +273,7 @@
       </a>
     </section>
 
-    <p class="developed"><a href="https://htmlacademy.ru/intensive/adaptive">
+    <p class="footer__developed"><a href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
         <svg width="27" height="34" viewBox="0 0 27 34">
           <use xlink:href="img/sprite.svg#html-academy"></use>

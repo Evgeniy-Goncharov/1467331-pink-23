@@ -1,0 +1,48 @@
+.apps {
+  label {
+    @media (min-width: 660px) {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 37px;
+  }
+}
+
+.apps__fieldset {
+  legend {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: 660px) {
+    padding-top: 30px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 54px;
+    margin-bottom: 55px;
+  }
+}
+
+.apps__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.apps__item {
+  &:not(:last-child) {
+    margin-bottom: 34px;
+  }
+}

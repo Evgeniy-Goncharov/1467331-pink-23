@@ -1,0 +1,43 @@
+.achievements {
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.achievements__fieldset {
+  padding-bottom: 56px;
+
+  @media (min-width: 660px) {
+    padding: 42px 60px 48px 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 55px;
+  }
+}
+
+.achievements__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 41px;
+  }
+}
+
+.achievements__item {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}

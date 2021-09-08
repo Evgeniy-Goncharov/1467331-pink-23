@@ -1,0 +1,29 @@
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 980px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+  }
+}
+
+.submit__button {
+  width: 100%;
+  margin-bottom: 33px;
+
+  @media (min-width: 660px) {
+    max-width: 296px;
+    margin-bottom: 0;
+  }
+}
