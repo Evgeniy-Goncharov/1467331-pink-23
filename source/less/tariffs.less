@@ -61,6 +61,20 @@
     margin: 0;
     padding: 0;
   }
+
+  &--hit {
+    position: relative;
+  }
+
+  &--hit::before {
+    content: "";
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    background: url("../img/logos/hit.svg") no-repeat center;
+    top: 0;
+    left: 20px;
+  }
 }
 
 .tariffs__caption {
@@ -79,12 +93,18 @@
 
   &--hit::before {
     content: "";
-    width: 74px;
-    height: 74px;
+    width: 59px;
+    height: 59px;
     position: absolute;
     background: url("../img/logos/hit.svg") no-repeat center;
+    background-size: contain;
     top: 0;
-    left: 20px;
+    left: 0;
+
+    @media (min-width: 1200px) {
+      width: 74px;
+      height: 74px;
+    }
   }
 
   &--cell {
@@ -134,19 +154,6 @@
       span {
         font-size: 24px;
       }
-    }
-  }
-
-  &--cell.tariffs__caption--hit::before {
-    width: 59px;
-    height: 59px;
-    left: 0;
-    background: url("../img/logos/hit-table.svg") no-repeat center;
-    background-size: contain;
-
-    @media (min-width: 1200px) {
-      width: 74px;
-      height: 74px;
     }
   }
 }
