@@ -40,11 +40,17 @@
   }
 }
 
-.text--desktop-only {
+.desktop-only {
   display: none;
 
   @media (min-width: 1200px) {
-    display: inline;
+    display: block;
+  }
+
+  &--text {
+    @media (min-width: 1200px) {
+      display: inline;
+    }
   }
 }
 
